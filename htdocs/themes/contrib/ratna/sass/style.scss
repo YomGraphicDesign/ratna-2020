@@ -206,8 +206,10 @@ ul.sf-menu.sf-style-default li li, ul.sf-menu.sf-style-default.sf-navbar > li > 
   margin-bottom: 25px;
 }
 
-#views-bootstrap-images-actualites-block-1 .row .col {
-  margin-bottom: 30px
+// views_bootstrap 4.x : les colonnes .col sont devenues .col-* (responsive).
+// Espace vertical entre les rangées des grilles d'images (galerie, actualités, termes).
+.view .views-view-grid .row > [class*="col-"] {
+  margin-bottom: 30px;
 }
 
 #views-bootstrap-images-actualites-block-1 .img-responsive {
@@ -244,9 +246,7 @@ ul.sf-menu.sf-style-default li li, ul.sf-menu.sf-style-default.sf-navbar > li > 
     text-decoration: none;
 }
 
-#views-bootstrap-taxonomy-term-page-1 .row .col{
-    margin-bottom: 30px;
-}
+// (espacement des colonnes désormais géré par la règle .view .views-view-grid .row > [class*="col-"] ci-dessus)
 
 #views-bootstrap-taxonomy-term-page-1 .img-responsive {
   width: 250px;

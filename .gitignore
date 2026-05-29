@@ -34,6 +34,10 @@ Thumbs.db
 /old 2020/
 /console/
 
+# Artefacts de compilation SASS
+.sass-cache/
+*.css.map
+
 # Backups locaux (non versionnés)
 /Backup/
 /archives/
