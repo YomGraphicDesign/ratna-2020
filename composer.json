@@ -52,6 +52,18 @@
                     "reference": "origin/master"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "frdh/mmenu",
+                "version": "8.5.24",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://registry.npmjs.org/mmenu-js/-/mmenu-js-8.5.24.tgz",
+                    "type": "tar"
+                }
+            }
         }
     ],
     "require": {
@@ -108,6 +120,7 @@
         "drupal/taxonomy_menu": "^3.5",
         "drupal/token": "^1.9",
         "drupal/upgrade_status": "^3.0",
+        "frdh/mmenu": "^8.0",
         "drupal/views_bootstrap": "^4.0",
         "drupal/views_bulk_operations": "^3.6",
         "drupal/webform": "^6.1",

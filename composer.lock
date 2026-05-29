@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7098eb5b7945069995f605fa9d48829e",
+    "content-hash": "abf45818626832932c6c5b2486953ae1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6095,6 +6095,15 @@
                 "source": "https://github.com/googleapis/php-jwt/tree/v6.10.0"
             },
             "time": "2023-12-01T16:26:39+00:00"
+        },
+        {
+            "name": "frdh/mmenu",
+            "version": "8.5.24",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/mmenu-js/-/mmenu-js-8.5.24.tgz"
+            },
+            "type": "drupal-library"
         },
         {
             "name": "google/analytics-data",
