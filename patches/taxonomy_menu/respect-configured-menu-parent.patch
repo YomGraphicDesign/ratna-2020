@@ -1,0 +1,18 @@
+Fix: respect the configured menu_parent for top-level terms.
+
+The condition negated getMenuParent(), so the configured parent menu item
+(e.g. "Galerie") was only used when NO parent was configured — meaning never
+when one actually existed. Top-level term links lost their parent and the menu
+was flattened. Removing the "!" restores the hierarchy.
+
+--- a/src/Entity/TaxonomyMenu.php
++++ b/src/Entity/TaxonomyMenu.php
+@@ -270,7 +270,7 @@ class TaxonomyMenu extends ConfigEntityBase implements TaxonomyMenuInterface {
+
+     // Note:
+     // if menu_parent_id is NULL, it will not update the hierarchy properly.
+-    if (empty($menu_parent_id) && !$this->getMenuParent()) {
++    if (empty($menu_parent_id) && $this->getMenuParent()) {
+       $menu_parent_id = str_replace($this->getMenu() . ':', '', $this->getMenuParent());
+     }
+

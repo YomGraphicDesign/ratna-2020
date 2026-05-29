@@ -175,6 +175,11 @@
     },
     "extra": {
         "composer-exit-on-patch-failure": true,
+        "patches": {
+            "drupal/taxonomy_menu": {
+                "Respect configured menu_parent for top-level terms": "patches/taxonomy_menu/respect-configured-menu-parent.patch"
+            }
+        },
         "patchLevel": {
             "drupal/core": "-p2"
         },
