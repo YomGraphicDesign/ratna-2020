@@ -1,0 +1,108 @@
+body .path-node.page-node-type-webform.has-glyphicons
+  a .visually-hidden.focusable.skip-link
+  div .dialog-off-canvas-main-canvas
+    header #navbar .navbar.navbar-default.container role="banner"
+      div .navbar-header
+        div .region.region-navigation
+          a .name.navbar-brand
+          p .navbar-text
+          section #block-mainnavigation .block.block-superfish.block-superfishmain.clearfix
+            ul #superfish-main .menu.sf-menu.sf-main.sf-horizontal.sf-style-default role="menu"
+              li #main-menu-link-content35713648-cb05-46c1-8379-6abfe06aa76d .sf-depth-1.sf-no-children.sf-first role="none"
+                a .sf-depth-1 role="menuitem"
+              li #main-menu-link-content3d072dbf-29e8-452f-bfe0-adf3595f7f33 .sf-depth-1.menuparent role="none"
+                span .sf-depth-1.menuparent.nolink role="menuitem"
+                ul role="menu"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie9 .sf-depth-2.sf-no-children.sf-first role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie10 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie7 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie1 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie6 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie2 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie3 .sf-depth-2.sf-no-children.sf-last role="none"
+                    a .sf-depth-2 role="menuitem"
+              li #main-views-viewviewsactualitespage-1 .sf-depth-1.sf-no-children role="none"
+                a .sf-depth-1 role="menuitem"
+              li #main-menu-link-content4ac06060-619b-4b0d-a20a-d015a65185e4 .active-trail.sf-depth-1.sf-no-children role="none"
+                a .is-active.sf-depth-1 role="menuitem"
+    div .main-container.container.js-quickedit-main-content role="main"
+      div .row
+        section .col-sm-12
+          div .highlighted
+            div .region.region-highlighted
+              div .hidden
+          a #main-content
+          div .region.region-content
+            nav .tabs role="navigation"
+              h2 .visually-hidden
+              ul .tabs--primary.nav.nav-tabs
+                li .active
+                  a .is-active
+                    span .visually-hidden
+                li
+                  a
+            article .webform.full.clearfix role="article"
+              div .content
+                div .field.field--name-body.field--type-text-with-summary.field--label-hidden.field--item
+                  h3
+                  p
+                  p
+                  p
+                  p
+                div .field.field--name-webform.field--type-webform.field--label-hidden.field--item
+                  form #webform-submission-contact-node-10-add-form .webform-submission-form.webform-submission-add-form.webform-submission-contact-form.webform-submission-contact-add-form.webform-submission-contact-node-10-form.webform-submission-contact-node-10-add-form.js-webform-details-toggle.webform-details-toggle.antibot
+                    div .form-item.js-form-item.form-type-textfield.js-form-type-textfield.form-item-name.js-form-item-name.form-group
+                      label .control-label.js-form-required.form-required
+                      input #edit-name .form-text.required.form-control
+                    div .form-item.js-form-item.form-type-email.js-form-type-email.form-item-email.js-form-item-email.form-group
+                      label .control-label.js-form-required.form-required
+                      input #edit-email .form-email.required.form-control
+                    div .form-item.js-form-item.form-type-textfield.js-form-type-textfield.form-item-subject.js-form-item-subject.form-group
+                      label .control-label.js-form-required.form-required
+                      input #edit-subject .form-text.required.form-control
+                    div .form-item.js-form-item.form-type-textarea.js-form-type-textarea.form-item-message.js-form-item-message.form-group
+                      label .control-label.js-form-required.form-required
+                      div .form-textarea-wrapper
+                        textarea #edit-message .form-textarea.required.form-control.resize-vertical
+                    div #edit-actions .form-actions.webform-actions.form-group.js-form-wrapper.form-wrapper
+                      button #edit-actions-submit .webform-button--submit.button.button--primary.js-form-submit.form-submit.btn-default.btn
+                    input
+                    input
+                    input
+                    input
+                    div .url-textfield.form-group.js-form-wrapper.form-wrapper
+                      div .form-item.js-form-item.form-type-textfield.js-form-type-textfield.form-item-url.js-form-item-url.form-group
+                        label .control-label
+                        input #edit-url .form-text.form-control
+  div .off-canvas-wrapper
+    div #off-canvas
+      ul
+        li .menu-item--_5713648-cb05-46c1-8379-6abfe06aa76d.menu-name--main
+          a
+        li .menu-item--_d072dbf-29e8-452f-bfe0-adf3595f7f33.menu-name--main
+          span
+          ul
+            li .menu-item--taxonomy-menumenu-linkgalerie9.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie10.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie7.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie1.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie6.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie2.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie3.menu-name--main
+              a
+        li .menu-item--viewsactualitespage-1.menu-name--main
+          a
+        li .menu-item--_ac06060-619b-4b0d-a20a-d015a65185e4.menu-name--main.menu-item--active-trail
+          a .is-active

@@ -1,0 +1,175 @@
+body .path-taxonomy.has-glyphicons
+  a .visually-hidden.focusable.skip-link
+  div .dialog-off-canvas-main-canvas
+    header #navbar .navbar.navbar-default.container role="banner"
+      div .navbar-header
+        div .region.region-navigation
+          a .name.navbar-brand
+          p .navbar-text
+          section #block-mainnavigation .block.block-superfish.block-superfishmain.clearfix
+            ul #superfish-main .menu.sf-menu.sf-main.sf-horizontal.sf-style-default role="menu"
+              li #main-menu-link-content35713648-cb05-46c1-8379-6abfe06aa76d .sf-depth-1.sf-no-children.sf-first role="none"
+                a .sf-depth-1 role="menuitem"
+              li #main-menu-link-content3d072dbf-29e8-452f-bfe0-adf3595f7f33 .sf-depth-1.menuparent role="none"
+                span .sf-depth-1.menuparent.nolink role="menuitem"
+                ul role="menu"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie9 .sf-depth-2.sf-no-children.sf-first role="none"
+                    a .is-active.sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie10 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie7 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie1 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie6 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie2 .sf-depth-2.sf-no-children role="none"
+                    a .sf-depth-2 role="menuitem"
+                  li #main-taxonomy-menumenu-linktaxonomy-menumenu-linkgalerie3 .sf-depth-2.sf-no-children.sf-last role="none"
+                    a .sf-depth-2 role="menuitem"
+              li #main-views-viewviewsactualitespage-1 .sf-depth-1.sf-no-children role="none"
+                a .sf-depth-1 role="menuitem"
+              li #main-menu-link-content4ac06060-619b-4b0d-a20a-d015a65185e4 .sf-depth-1.sf-no-children role="none"
+                a .sf-depth-1 role="menuitem"
+    div .main-container.container.js-quickedit-main-content role="main"
+      div .row
+        section .col-sm-12
+          div .highlighted
+            div .region.region-highlighted
+              div .hidden
+          a #main-content
+          div .region.region-content
+            div .views-element-container.form-group
+              div .view.view-taxonomy-term.view-id-taxonomy_term.view-display-id-page_1.js-view-dom-id-…
+                div .view-header
+                  div
+                    h2
+                      a
+                        div .field.field--name-name.field--type-string.field--label-hidden.field--item
+                div .view-content
+                  div #views-bootstrap-taxonomy-term-page-1 .grid.views-view-grid
+                    div .row
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+                      div .col-xs-6.col-sm-4.col-md-3.col-lg-2
+                        div .views-field.views-field-field-image-oeuvre
+                          div .field-content
+                            a
+                              div
+                                div .field.field--name-field-media-image.field--type-image.field--label-hidden.field--item
+                                  img .img-responsive
+  div .off-canvas-wrapper
+    div #off-canvas
+      ul
+        li .menu-item--_5713648-cb05-46c1-8379-6abfe06aa76d.menu-name--main
+          a
+        li .menu-item--_d072dbf-29e8-452f-bfe0-adf3595f7f33.menu-name--main
+          span
+          ul
+            li .menu-item--taxonomy-menumenu-linkgalerie9.menu-name--main
+              a .is-active
+            li .menu-item--taxonomy-menumenu-linkgalerie10.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie7.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie1.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie6.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie2.menu-name--main
+              a
+            li .menu-item--taxonomy-menumenu-linkgalerie3.menu-name--main
+              a
+        li .menu-item--viewsactualitespage-1.menu-name--main
+          a
+        li .menu-item--_ac06060-619b-4b0d-a20a-d015a65185e4.menu-name--main
+          a
