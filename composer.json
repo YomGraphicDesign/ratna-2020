@@ -94,6 +94,7 @@
         "drupal/entity_reference_revisions": "^1.0",
         "drupal/features": "^3.12",
         "drupal/field_group": "^3.4",
+        "drupal/gin": "^4.0",
         "drupal/google_analytics": "^4.0",
         "drupal/google_analytics_reports": "^4.0",
         "drupal/honeypot": "^2.1",
