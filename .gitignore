@@ -4,7 +4,9 @@
 /htdocs/core/
 /htdocs/modules/contrib/
 /htdocs/themes/contrib/
-/htdocs/profiles/contrib/
+!/htdocs/themes/contrib/ratna/
+!/htdocs/themes/contrib/base/
+/htdocs/profiles/
 /htdocs/libraries/
 
 # Ignore sensitive information
@@ -27,6 +29,10 @@ Thumbs.db
 
 # Variables d'environnement
 /.env
+
+# Legacy / non versionné
+/old 2020/
+/console/
 
 # Backups locaux (non versionnés)
 /Backup/
