@@ -404,10 +404,8 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   display: none !important;
 }
 
-// 2 & 3. Modale "œuvre" accordée au thème sombre, centrage forcé.
-// On écrase le positionnement inline de jQuery UI (top/left/width/height) avec
-// !important : position fixed + centrage par transform = toujours centré,
-// indépendamment de la taille du contenu et du scroll de la page.
+// Modale œuvre — centrage forcé, thème sombre.
+// Pas de flex : on laisse jQuery UI gérer son layout interne (titlebar + content).
 .ui-dialog.oeuvre-modal {
   position: fixed !important;
   top: 50% !important;
@@ -416,71 +414,55 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   margin: 0 !important;
   width: 90vw !important;
   max-width: 1100px !important;
-  max-height: 90vh;
   background: #222;
   border: 0;
-  border-radius: 0;
   padding: 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, .6);
-  display: flex;
-  flex-direction: column;
 
+  // Barre de titre : juste assez haute pour le bouton ×, fond sombre
   .ui-dialog-titlebar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     background: #222;
     border: 0;
-    padding: 6px 6px 6px 0;
-    flex: 0 0 auto;
+    padding: 4px 8px 4px 8px;
+    min-height: 40px;
   }
 
-  .ui-dialog-title {
-    display: none;
-  }
+  // Titre masqué
+  .ui-dialog-title { display: none; }
 
+  // Bouton × : jQuery UI le positionne en absolu dans la titlebar
   .ui-dialog-titlebar-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
+    top: 50% !important;
+    right: 8px !important;
+    margin-top: -16px !important;
+    width: 32px;
+    height: 32px;
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, .4);
-    border-radius: 0;
-    opacity: .8;
+    border: 1px solid rgba(255, 255, 255, .5);
     cursor: pointer;
 
-    &:hover {
-      opacity: 1;
-      border-color: #fff;
-    }
+    &:hover { border-color: #fff; }
 
     .ui-icon {
       filter: invert(1);
-      width: 18px;
-      height: 18px;
-      background-size: 18px 18px;
+      margin: 7px;
     }
   }
 
-  // Le contenu remplit l'espace restant et défile si l'œuvre est plus haute.
-  // padding-top réserve l'espace pour le bouton fermeture positionné en absolu.
+  // Contenu
   .ui-dialog-content {
     background: #222;
     padding: 0 18px 18px;
     width: auto !important;
     height: auto !important;
-    max-height: none !important;
+    max-height: calc(90vh - 50px) !important;
     overflow-y: auto;
-    flex: 1 1 auto;
-    min-height: 0;
   }
 
   img { max-width: 100%; height: auto; }
 }
 
-// Fond assombri derrière la modale (couvre tout, position fixe)
+// Fond assombri
 .ui-widget-overlay.ui-front {
   position: fixed;
   inset: 0;
