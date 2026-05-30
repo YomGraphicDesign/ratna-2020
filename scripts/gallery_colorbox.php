@@ -19,7 +19,7 @@ $config->set($base . '.link_class', '');
 $config->set($base . '.alter_text', TRUE);
 $config->set(
   $base . '.text',
-  '<a href="{{ view_node }}" class="use-ajax" data-dialog-type="modal" data-progress-type="fullscreen" data-dialog-options=\'{"width":"90%","dialogClass":"oeuvre-modal"}\'>{{ field_image_oeuvre }}</a>'
+  '<a href="{{ view_node }}" class="use-ajax" data-dialog-type="modal" data-progress-type="none" data-dialog-options=\'{"width":"90%","dialogClass":"oeuvre-modal"}\'>{{ field_image_oeuvre }}</a>'
 );
 $config->save();
 
