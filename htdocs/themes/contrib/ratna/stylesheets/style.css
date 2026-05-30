@@ -8189,8 +8189,7 @@ a:focus:not(:focus-visible),
 }
 
 html {
-  overflow-y: scroll;
-  scrollbar-gutter: stable;
+  overflow-y: scroll !important;
 }
 
 .ui-dialog.oeuvre-modal {

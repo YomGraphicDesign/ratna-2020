@@ -379,13 +379,14 @@ a:focus:not(:focus-visible),
   box-shadow: none;
 }
 
-// Empêche le décalage de la page à l'ouverture de la modale : la barre de
-// défilement est toujours présente (overflow-y: scroll) ET son espace est
-// réservé même quand la modale passe <html> en overflow:hidden
-// (scrollbar-gutter: stable) → largeur constante, pas de saut.
+// Empêche le "saut" de page à l'ouverture de la modale.
+// À l'ouverture, le pont modal Bootstrap met <html> en overflow:hidden (inline)
+// et bascule le scroll sur <body> : la barre de défilement de la fenêtre
+// disparaît (décalage horizontal des vignettes) et le scroll repart en haut
+// (la page saute). On FORCE <html> à garder sa barre (overflow-y:scroll
+// !important écrase le style inline) → pas de bascule, pas de saut.
 html {
-  overflow-y: scroll;
-  scrollbar-gutter: stable;
+  overflow-y: scroll !important;
 }
 
 // 2 & 3. Modale "œuvre" accordée au thème sombre, centrage forcé.
