@@ -8231,13 +8231,19 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close {
   background: transparent;
   border: 0;
+  width: 36px;
+  height: 36px;
   opacity: 0.8;
+  cursor: pointer;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close:hover {
   opacity: 1;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-icon {
   filter: invert(1);
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-content {
   background: #222;
