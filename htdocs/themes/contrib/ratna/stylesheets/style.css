@@ -8239,6 +8239,8 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-icon {
   filter: invert(1);
   margin: 7px;
+  top: 0;
+  left: 0;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-content {
   background: #222;
