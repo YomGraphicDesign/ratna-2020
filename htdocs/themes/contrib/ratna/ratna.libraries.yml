@@ -5,6 +5,14 @@ jquery_compat:
     - core/jquery
     - core/drupalSettings
 
+oeuvre_modal:
+  js:
+    js/oeuvre-modal.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+
 framework:
   css:
     theme:
