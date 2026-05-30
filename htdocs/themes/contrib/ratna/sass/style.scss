@@ -426,13 +426,13 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   flex-direction: column;
 
   .ui-dialog-titlebar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #222;
     border: 0;
-    padding: 0;
-    z-index: 10;
+    padding: 6px 6px 6px 0;
+    flex: 0 0 auto;
   }
 
   .ui-dialog-title {
@@ -440,25 +440,27 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   }
 
   .ui-dialog-titlebar-close {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, .85);
-    border: 0;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .4);
     border-radius: 0;
-    opacity: 1;
+    opacity: .8;
     cursor: pointer;
 
-    &:hover { background: #fff; }
+    &:hover {
+      opacity: 1;
+      border-color: #fff;
+    }
 
     .ui-icon {
-      filter: none;
-      width: 22px;
-      height: 22px;
-      background-size: 22px 22px;
+      filter: invert(1);
+      width: 18px;
+      height: 18px;
+      background-size: 18px 18px;
     }
   }
 
@@ -466,7 +468,7 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   // padding-top réserve l'espace pour le bouton fermeture positionné en absolu.
   .ui-dialog-content {
     background: #222;
-    padding: 48px 18px 18px;
+    padding: 0 18px 18px;
     width: auto !important;
     height: auto !important;
     max-height: none !important;
