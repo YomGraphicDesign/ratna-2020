@@ -7830,6 +7830,11 @@ html, body, .mm-page, .mm-wrapper_background, .navbar-default {
   }
 }
 
+html,
+body {
+  transition: none !important;
+}
+
 .container {
   margin-top: 25px;
 }

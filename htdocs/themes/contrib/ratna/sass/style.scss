@@ -19,6 +19,14 @@ body {
   }
 }
 
+// Bootstrap 3 applique "transition: all" sur html et body (via *, trop large).
+// Quand mmenu initialise et ajoute ses classes/styles, cette transition anime
+// le changement → saut visible au chargement. On la désactive sur html/body.
+html,
+body {
+  transition: none !important;
+}
+
 .container {
   margin-top: 25px;
 }
