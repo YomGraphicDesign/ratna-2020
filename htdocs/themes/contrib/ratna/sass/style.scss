@@ -367,3 +367,61 @@ border-radius: 0px;
     }    
   }
 }
+
+// ============================================================
+// Œuvres en modale (galerie) — habillage de la modale Drupal
+// ============================================================
+
+// 1. Pas de contour de focus au clic souris (conservé au clavier via :focus-visible)
+a:focus:not(:focus-visible),
+.use-ajax:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+// 2 & 3. Modale "œuvre" accordée au thème sombre, centrage/hauteur maîtrisés
+.ui-dialog.oeuvre-modal {
+  background: #222;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .6);
+  max-width: 95vw !important;
+
+  .ui-dialog-titlebar {
+    background: #222;
+    border: 0;
+    border-radius: 0;
+    padding: 12px 18px;
+  }
+
+  .ui-dialog-title {
+    color: #fff;
+    font-weight: 300;
+    font-size: 22px;
+  }
+
+  .ui-dialog-titlebar-close {
+    background: transparent;
+    border: 0;
+    opacity: .8;
+
+    &:hover { opacity: 1; }
+    .ui-icon { filter: invert(1); }
+  }
+
+  .ui-dialog-content {
+    background: #222;
+    padding: 0 18px 18px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  img { max-width: 100%; height: auto; }
+}
+
+// Fond assombri derrière la modale
+.ui-widget-overlay.ui-front {
+  background: #000;
+  opacity: .75;
+}
