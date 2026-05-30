@@ -8192,6 +8192,10 @@ html {
   overflow-y: scroll !important;
 }
 
+a.use-ajax[data-dialog-type] .ajax-throbber {
+  display: none !important;
+}
+
 .ui-dialog.oeuvre-modal {
   position: fixed !important;
   top: 50% !important;

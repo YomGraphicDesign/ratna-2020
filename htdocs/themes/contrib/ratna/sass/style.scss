@@ -389,6 +389,13 @@ html {
   overflow-y: scroll !important;
 }
 
+// 4. Le thème Bootstrap insère un <span class="ajax-throbber glyphicon-spin">
+// dans le lien au clic → agrandit la colonne et décale la grille. On le masque
+// sur les liens de modale (ouverture instantanée, aucun indicateur utile).
+a.use-ajax[data-dialog-type] .ajax-throbber {
+  display: none !important;
+}
+
 // 2 & 3. Modale "œuvre" accordée au thème sombre, centrage forcé.
 // On écrase le positionnement inline de jQuery UI (top/left/width/height) avec
 // !important : position fixed + centrage par transform = toujours centré,
