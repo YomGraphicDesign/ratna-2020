@@ -8,6 +8,13 @@
  */
 (function ($) {
   'use strict';
+
+  // Garantit drupalSettings.dialog : sans ça, le pont modal de Bootstrap
+  // (modal.jquery.ui.bridge.js) plante en tentant d'y écrire buttonClass.
+  if (typeof window.drupalSettings !== 'undefined') {
+    window.drupalSettings.dialog = window.drupalSettings.dialog || {};
+  }
+
   if (!$) {
     return;
   }

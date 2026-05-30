@@ -3,6 +3,7 @@ jquery_compat:
     js/jquery-compat.js: {}
   dependencies:
     - core/jquery
+    - core/drupalSettings
 
 framework:
   css:
