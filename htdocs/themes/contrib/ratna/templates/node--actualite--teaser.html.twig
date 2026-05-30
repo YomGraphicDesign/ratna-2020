@@ -80,7 +80,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-{{ attach_library('classy/node') }}
+{# 'classy' a été retiré du core en D10/D11 ; ratna/bootstrap fournissent leur propre style de nœud. #}
 <article{{ attributes.addClass(classes) }}>
 
   {% if display_submitted %}
