@@ -426,11 +426,13 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   flex-direction: column;
 
   .ui-dialog-titlebar {
-    background: #222;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
     border: 0;
-    border-radius: 0;
-    padding: 12px 18px;
-    flex: 0 0 auto;
+    padding: 0;
+    z-index: 10;
   }
 
   .ui-dialog-title {
@@ -438,19 +440,25 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   }
 
   .ui-dialog-titlebar-close {
-    background: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, .5);
     border: 0;
-    width: 36px;
-    height: 36px;
-    opacity: .8;
+    border-radius: 0;
+    opacity: 1;
     cursor: pointer;
 
-    &:hover { opacity: 1; }
+    &:hover { background: rgba(0, 0, 0, .8); }
+
     .ui-icon {
       filter: invert(1);
-      width: 20px;
-      height: 20px;
-      background-size: 20px 20px;
+      width: 22px;
+      height: 22px;
+      background-size: 22px 22px;
     }
   }
 
