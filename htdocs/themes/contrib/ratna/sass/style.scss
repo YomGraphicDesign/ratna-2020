@@ -379,20 +379,39 @@ a:focus:not(:focus-visible),
   box-shadow: none;
 }
 
-// 2 & 3. Modale "œuvre" accordée au thème sombre, centrage/hauteur maîtrisés
+// Réserve l'espace de la scrollbar : la page ne se décale plus quand la modale
+// ouvre (et masque le scroll de l'arrière-plan).
+html {
+  scrollbar-gutter: stable;
+}
+
+// 2 & 3. Modale "œuvre" accordée au thème sombre, centrage forcé.
+// On écrase le positionnement inline de jQuery UI (top/left/width/height) avec
+// !important : position fixed + centrage par transform = toujours centré,
+// indépendamment de la taille du contenu et du scroll de la page.
 .ui-dialog.oeuvre-modal {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  margin: 0 !important;
+  width: 90vw !important;
+  max-width: 1100px !important;
+  max-height: 90vh;
   background: #222;
   border: 0;
   border-radius: 0;
   padding: 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, .6);
-  max-width: 95vw !important;
+  display: flex;
+  flex-direction: column;
 
   .ui-dialog-titlebar {
     background: #222;
     border: 0;
     border-radius: 0;
     padding: 12px 18px;
+    flex: 0 0 auto;
   }
 
   .ui-dialog-title {
@@ -410,18 +429,25 @@ a:focus:not(:focus-visible),
     .ui-icon { filter: invert(1); }
   }
 
+  // Le contenu remplit l'espace restant et défile si l'œuvre est plus haute.
   .ui-dialog-content {
     background: #222;
     padding: 0 18px 18px;
-    max-height: 80vh;
+    width: auto !important;
+    height: auto !important;
+    max-height: none !important;
     overflow-y: auto;
+    flex: 1 1 auto;
+    min-height: 0;
   }
 
   img { max-width: 100%; height: auto; }
 }
 
-// Fond assombri derrière la modale
+// Fond assombri derrière la modale (couvre tout, position fixe)
 .ui-widget-overlay.ui-front {
+  position: fixed;
+  inset: 0;
   background: #000;
   opacity: .75;
 }

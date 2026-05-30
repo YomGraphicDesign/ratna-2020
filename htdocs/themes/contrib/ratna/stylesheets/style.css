@@ -8188,19 +8188,33 @@ a:focus:not(:focus-visible),
   box-shadow: none;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 .ui-dialog.oeuvre-modal {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  margin: 0 !important;
+  width: 90vw !important;
+  max-width: 1100px !important;
+  max-height: 90vh;
   background: #222;
   border: 0;
   border-radius: 0;
   padding: 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-  max-width: 95vw !important;
+  display: flex;
+  flex-direction: column;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar {
   background: #222;
   border: 0;
   border-radius: 0;
   padding: 12px 18px;
+  flex: 0 0 auto;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-title {
   color: #fff;
@@ -8221,8 +8235,12 @@ a:focus:not(:focus-visible),
 .ui-dialog.oeuvre-modal .ui-dialog-content {
   background: #222;
   padding: 0 18px 18px;
-  max-height: 80vh;
+  width: auto !important;
+  height: auto !important;
+  max-height: none !important;
   overflow-y: auto;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 .ui-dialog.oeuvre-modal img {
   max-width: 100%;
@@ -8230,6 +8248,8 @@ a:focus:not(:focus-visible),
 }
 
 .ui-widget-overlay.ui-front {
+  position: fixed;
+  inset: 0;
   background: #000;
   opacity: 0.75;
 }
