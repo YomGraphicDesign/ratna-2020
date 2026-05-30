@@ -434,9 +434,7 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   }
 
   .ui-dialog-title {
-    color: #fff;
-    font-weight: 300;
-    font-size: 22px;
+    display: none;
   }
 
   .ui-dialog-titlebar-close {

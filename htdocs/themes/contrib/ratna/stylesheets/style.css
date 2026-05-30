@@ -8226,9 +8226,7 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   flex: 0 0 auto;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-title {
-  color: #fff;
-  font-weight: 300;
-  font-size: 22px;
+  display: none;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close {
   background: transparent;
