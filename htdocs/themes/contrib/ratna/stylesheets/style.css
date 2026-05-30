@@ -8254,7 +8254,7 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
 }
 .ui-dialog.oeuvre-modal .ui-dialog-content {
   background: #222;
-  padding: 0 18px 18px;
+  padding: 48px 18px 18px;
   width: auto !important;
   height: auto !important;
   max-height: none !important;
