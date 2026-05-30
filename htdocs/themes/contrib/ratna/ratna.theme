@@ -6,3 +6,20 @@
  *
  * Place your custom PHP code in this file.
  */
+
+/**
+ * Implements hook_library_info_alter().
+ *
+ * Drupal 11 embarque jQuery 4, qui a supprimé $.isFunction, $.isArray, etc.
+ * colorbox et les plugins Bootstrap 3 les utilisent encore. On force donc le
+ * polyfill ratna/jquery_compat à se charger AVANT eux en l'ajoutant comme
+ * dépendance (l'ordre par "weight" était trop fragile).
+ */
+function ratna_library_info_alter(array &$libraries, $extension) {
+  if ($extension === 'colorbox' && isset($libraries['colorbox'])) {
+    $libraries['colorbox']['dependencies'][] = 'ratna/jquery_compat';
+  }
+  if ($extension === 'bootstrap' && isset($libraries['framework'])) {
+    $libraries['framework']['dependencies'][] = 'ratna/jquery_compat';
+  }
+}

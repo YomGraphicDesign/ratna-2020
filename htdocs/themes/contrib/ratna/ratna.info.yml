@@ -22,3 +22,9 @@ regions:
 libraries-extend:
   bootstrap/framework:
     - ratna/framework
+
+# Désactive le pont Bootstrap↔jQuery UI dialog (modal.jquery.ui.bridge.js),
+# cassé sous jQuery 4. Les œuvres utilisent le dialog natif du core, stylé via
+# .oeuvre-modal — ce pont n'est pas nécessaire.
+libraries-override:
+  bootstrap/modal.jquery.ui.bridge: false

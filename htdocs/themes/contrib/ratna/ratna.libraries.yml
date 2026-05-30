@@ -1,3 +1,9 @@
+jquery_compat:
+  js:
+    js/jquery-compat.js: {}
+  dependencies:
+    - core/jquery
+
 framework:
   css:
     theme:
