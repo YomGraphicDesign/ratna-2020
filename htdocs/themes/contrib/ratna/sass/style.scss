@@ -379,9 +379,12 @@ a:focus:not(:focus-visible),
   box-shadow: none;
 }
 
-// Réserve l'espace de la scrollbar : la page ne se décale plus quand la modale
-// ouvre (et masque le scroll de l'arrière-plan).
+// Empêche le décalage de la page à l'ouverture de la modale : la barre de
+// défilement est toujours présente (overflow-y: scroll) ET son espace est
+// réservé même quand la modale passe <html> en overflow:hidden
+// (scrollbar-gutter: stable) → largeur constante, pas de saut.
 html {
+  overflow-y: scroll;
   scrollbar-gutter: stable;
 }
 
