@@ -217,7 +217,7 @@ ul.sf-menu.sf-style-default li li, ul.sf-menu.sf-style-default.sf-navbar > li > 
 // views_bootstrap 4.x : les colonnes .col sont devenues .col-* (responsive).
 // Espace vertical entre les rangées des grilles d'images (galerie, actualités, termes).
 .view .views-view-grid .row > [class*="col-"] {
-  margin-bottom: 30px;
+  margin-bottom: 25px; // = gutter horizontal ($grid-gutter-width)
 }
 
 #views-bootstrap-images-actualites-block-1 .img-responsive {
