@@ -419,8 +419,43 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   padding: 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, .6);
 
-  // Pas de barre de titre ni de croix (fermeture au clic en dehors).
-  .ui-dialog-titlebar { display: none; }
+  // Barre de titre réduite au bouton de fermeture (titre masqué).
+  .ui-dialog-titlebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  .ui-dialog-title { display: none; }
+
+  .ui-dialog-titlebar-close {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border: 0;
+    opacity: .85;
+    cursor: pointer;
+
+    &:hover { opacity: 1; }
+
+    .ui-icon {
+      filter: invert(1);
+      margin: 0 !important;
+      top: auto !important;
+      left: auto !important;
+    }
+  }
 
   // Contenu
   .ui-dialog-content {
