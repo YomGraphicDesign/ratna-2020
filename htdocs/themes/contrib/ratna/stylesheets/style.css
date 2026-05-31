@@ -8207,8 +8207,8 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   left: 50% !important;
   transform: translate(-50%, -50%);
   margin: 0 !important;
-  width: 90vw !important;
-  max-width: 1100px !important;
+  width: auto !important;
+  max-width: 90vw !important;
   background: #222 !important;
   border: 0 !important;
   padding: 0;
@@ -8267,6 +8267,8 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
 }
 .ui-dialog.oeuvre-modal img {
   max-width: 100%;
+  max-height: 78vh;
+  width: auto;
   height: auto;
 }
 

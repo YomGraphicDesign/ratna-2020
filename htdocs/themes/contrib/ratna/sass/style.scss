@@ -412,8 +412,8 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   left: 50% !important;
   transform: translate(-50%, -50%);
   margin: 0 !important;
-  width: 90vw !important;
-  max-width: 1100px !important;
+  width: auto !important;
+  max-width: 90vw !important;
   background: #222 !important;
   border: 0 !important;
   padding: 0;
@@ -475,7 +475,14 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
     overflow-y: auto;
   }
 
-  img { max-width: 100%; height: auto; }
+  // L'image est bornée par la hauteur ; sa largeur (auto) détermine la largeur
+  // de la modale, qui épouse ainsi l'œuvre.
+  img {
+    max-width: 100%;
+    max-height: 78vh;
+    width: auto;
+    height: auto;
+  }
 }
 
 // Fond noir opaque qui masque le site, et curseur "fermer" (clic = ferme).
