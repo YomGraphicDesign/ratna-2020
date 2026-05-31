@@ -8209,53 +8209,55 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   margin: 0 !important;
   width: 90vw !important;
   max-width: 1100px !important;
-  background: #222;
-  border: 0;
+  background: #222 !important;
+  border: 0 !important;
   padding: 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
+  position: static;
   background: transparent;
   border: 0;
   padding: 0;
+  height: 0;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-title {
   display: none;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close {
-  position: relative !important;
-  top: auto !important;
-  right: auto !important;
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
   margin: 0 !important;
-  display: flex;
+  z-index: 1000;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: #000;
-  border: 0;
-  opacity: 0.85;
+  background: #fff !important;
+  border: 0 !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  opacity: 1;
   cursor: pointer;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close:hover {
-  opacity: 1;
+  background: #eee !important;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-icon {
-  filter: invert(1);
+  filter: none;
   margin: 0 !important;
   top: auto !important;
   left: auto !important;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-content {
-  background: #222;
-  padding: 0 18px 18px;
+  background: #222 !important;
+  color: #fff;
+  padding: 18px;
   width: auto !important;
   height: auto !important;
-  max-height: calc(90vh - 50px) !important;
+  max-height: 88vh !important;
   overflow-y: auto;
 }
 .ui-dialog.oeuvre-modal img {
