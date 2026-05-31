@@ -419,37 +419,8 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   padding: 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, .6);
 
-  // Barre de titre : juste assez haute pour le bouton ×, fond sombre
-  .ui-dialog-titlebar {
-    background: #222;
-    border: 0;
-    padding: 4px 8px 4px 8px;
-    min-height: 40px;
-  }
-
-  // Titre masqué
-  .ui-dialog-title { display: none; }
-
-  // Bouton × : jQuery UI le positionne en absolu dans la titlebar
-  .ui-dialog-titlebar-close {
-    top: 50% !important;
-    right: 8px !important;
-    margin-top: -16px !important;
-    width: 32px;
-    height: 32px;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, .5);
-    cursor: pointer;
-
-    &:hover { border-color: #fff; }
-
-    .ui-icon {
-      filter: invert(1);
-      margin: 7px;
-      top: 0;
-      left: 0;
-    }
-  }
+  // Pas de barre de titre ni de croix (fermeture au clic en dehors).
+  .ui-dialog-titlebar { display: none; }
 
   // Contenu
   .ui-dialog-content {
@@ -464,10 +435,11 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   img { max-width: 100%; height: auto; }
 }
 
-// Fond assombri
+// Fond noir opaque qui masque le site, et curseur "fermer" (clic = ferme).
 .ui-widget-overlay.ui-front {
   position: fixed;
   inset: 0;
   background: #000;
-  opacity: .75;
+  opacity: .96;
+  cursor: pointer;
 }
