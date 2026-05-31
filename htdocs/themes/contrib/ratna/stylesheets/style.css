@@ -8264,12 +8264,43 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   height: auto !important;
   max-height: 88vh !important;
   overflow-y: auto;
+  transition: opacity 0.2s ease;
 }
 .ui-dialog.oeuvre-modal img {
   max-width: 100%;
   max-height: 78vh;
   width: auto;
   height: auto;
+}
+
+.ui-dialog.oeuvre-modal .oeuvre-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 1000;
+}
+.ui-dialog.oeuvre-modal .oeuvre-nav:hover {
+  opacity: 1;
+}
+
+.ui-dialog.oeuvre-modal .oeuvre-nav--prev {
+  left: -56px;
+}
+
+.ui-dialog.oeuvre-modal .oeuvre-nav--next {
+  right: -56px;
 }
 
 .ui-widget-overlay.ui-front {

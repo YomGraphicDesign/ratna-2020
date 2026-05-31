@@ -473,6 +473,7 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
     height: auto !important;
     max-height: 88vh !important;
     overflow-y: auto;
+    transition: opacity .2s ease;
   }
 
   // L'image est bornée par la hauteur ; sa largeur (auto) détermine la largeur
@@ -484,6 +485,30 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
     height: auto;
   }
 }
+
+// Flèches précédent / suivant (lightbox) sur les bords de la modale.
+.ui-dialog.oeuvre-modal .oeuvre-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+  opacity: .5;
+  cursor: pointer;
+  z-index: 1000;
+
+  &:hover { opacity: 1; }
+}
+.ui-dialog.oeuvre-modal .oeuvre-nav--prev { left: -56px; }
+.ui-dialog.oeuvre-modal .oeuvre-nav--next { right: -56px; }
 
 // Fond noir opaque qui masque le site, et curseur "fermer" (clic = ferme).
 .ui-widget-overlay.ui-front {

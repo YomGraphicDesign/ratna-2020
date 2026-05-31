@@ -28,15 +28,23 @@
       return;
     }
     index = (index + delta + links.length) % links.length;
-    var target = links[index];
+    var url = links[index].getAttribute('href');
     var $content = $('.ui-dialog.oeuvre-modal .ui-dialog-content');
-    if ($content.length) {
-      $content.dialog('close');
+    if (!$content.length) {
+      return;
     }
-    // Laisse la modale se fermer avant d'ouvrir la suivante (évite la collision AJAX).
-    window.setTimeout(function () {
-      target.click();
-    }, 120);
+    // On garde la modale ouverte et on remplace seulement son contenu (AJAX) :
+    // on récupère la page de l'œuvre et on en extrait le nœud rendu.
+    $content.css('opacity', 0.3);
+    $.get(url).done(function (html) {
+      var $node = $('<div>').html(html).find('article[data-history-node-id]').first();
+      $content.html($node.length ? $node : html).css('opacity', 1);
+      if (window.Drupal && Drupal.attachBehaviors) {
+        Drupal.attachBehaviors($content[0]);
+      }
+    }).fail(function () {
+      $content.css('opacity', 1);
+    });
   }
 
   // Injecte les flèches précédent/suivant à l'ouverture de la modale.
