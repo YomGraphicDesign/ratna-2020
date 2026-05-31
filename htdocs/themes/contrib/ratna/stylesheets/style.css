@@ -8233,7 +8233,7 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   width: 40px;
   height: 40px;
   padding: 0;
-  background: #fff !important;
+  background: #444 !important;
   border: 0 !important;
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -8243,15 +8243,15 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   overflow: hidden;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close:hover {
-  background: #eee !important;
+  background: #555 !important;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close::before {
   content: "×";
   display: block;
   font-size: 30px;
-  line-height: 40px;
+  line-height: 31px;
   text-align: center;
-  color: #222;
+  color: #fff;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-icon {
   display: none;
