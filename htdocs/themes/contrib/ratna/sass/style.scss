@@ -449,8 +449,10 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
     line-height: 0;
     cursor: pointer;
     overflow: hidden;
+    outline: none !important;
 
     &:hover { background: #555 !important; }
+    &:focus { outline: none !important; box-shadow: 0 2px 8px rgba(0, 0, 0, .4) !important; }
 
     &::before {
       content: "\00d7"; // ×

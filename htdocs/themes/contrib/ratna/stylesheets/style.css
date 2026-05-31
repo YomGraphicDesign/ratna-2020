@@ -8241,9 +8241,14 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   line-height: 0;
   cursor: pointer;
   overflow: hidden;
+  outline: none !important;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close:hover {
   background: #555 !important;
+}
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close:focus {
+  outline: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close::before {
   content: "×";
