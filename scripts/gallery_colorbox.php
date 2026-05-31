@@ -11,14 +11,19 @@
  */
 
 $config = \Drupal::configFactory()->getEditable('views.view.taxonomy_term');
-$base = 'display.default.display_options.fields.field_image_oeuvre.alter';
+$field = 'display.default.display_options.fields.field_image_oeuvre';
 
-// On désactive le lien simple et on réécrit la sortie en lien modale.
-$config->set($base . '.make_link', FALSE);
-$config->set($base . '.link_class', '');
-$config->set($base . '.alter_text', TRUE);
+// Vignette : la media rendue en view mode "galerie" (pas de formatter colorbox).
+$config->set($field . '.type', 'entity_reference_entity_view');
+$config->set($field . '.settings', ['view_mode' => 'galerie', 'link' => FALSE]);
+
+// On réécrit la sortie : la vignette devient un lien modale Drupal (use-ajax)
+// qui ouvre le nœud œuvre complet. data-progress-type=none = pas de throbber.
+$config->set($field . '.alter.make_link', FALSE);
+$config->set($field . '.alter.link_class', '');
+$config->set($field . '.alter.alter_text', TRUE);
 $config->set(
-  $base . '.text',
+  $field . '.alter.text',
   '<a href="{{ view_node }}" class="use-ajax" data-dialog-type="modal" data-progress-type="none" data-dialog-options=\'{"width":"90%","dialogClass":"oeuvre-modal"}\'>{{ field_image_oeuvre }}</a>'
 );
 $config->save();
