@@ -8230,8 +8230,8 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   right: -20px !important;
   margin: 0 !important;
   z-index: 1000;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   background: #444 !important;
   border: 0 !important;
