@@ -222,16 +222,10 @@ ul.sf-menu.sf-style-default li li, ul.sf-menu.sf-style-default.sf-navbar > li > 
 
 // Les vignettes remplissent la largeur de leur colonne → l'écart horizontal
 // entre images = le gutter (25px) = l'écart vertical. Espacements identiques.
-.view .views-view-grid .row > [class*="col-"] img {
-  width: 100%;
-  height: auto;
-}
-
-#views-bootstrap-images-actualites-block-1 .img-responsive {
-  width: 250px;
-  @media (min-width: 1024px) {
-    width: auto;
-  }
+// Le lien use-ajax (inline) se rétrécit à l'image : on le passe en block.
+.view .views-view-grid .row > [class*="col-"] {
+  a { display: block; }
+  img { width: 100%; height: auto; }
 }
 
 .view-taxonomy-term .view-header h2 {
@@ -261,14 +255,8 @@ ul.sf-menu.sf-style-default li li, ul.sf-menu.sf-style-default.sf-navbar > li > 
     text-decoration: none;
 }
 
-// (espacement des colonnes désormais géré par la règle .view .views-view-grid .row > [class*="col-"] ci-dessus)
-
-#views-bootstrap-taxonomy-term-page-1 .img-responsive {
-  width: 250px;
-  @media (min-width: 1024px) {
-    width: auto;
-  }
-}
+// (espacement + largeur des vignettes gérés par la règle
+// .view .views-view-grid .row > [class*="col-"] ci-dessus)
 
 #cboxContent, .cboxPhoto {
 -webkit-border-radius: 0px;
