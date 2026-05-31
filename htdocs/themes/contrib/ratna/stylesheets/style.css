@@ -8265,6 +8265,13 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   max-height: 88vh !important;
   overflow-y: auto;
   transition: opacity 0.2s ease;
+  outline: none !important;
+}
+.ui-dialog.oeuvre-modal:focus,
+.ui-dialog.oeuvre-modal .ui-dialog-content:focus,
+.ui-dialog.oeuvre-modal article:focus,
+.ui-dialog.oeuvre-modal [tabindex]:focus {
+  outline: none !important;
 }
 .ui-dialog.oeuvre-modal img {
   max-width: 100%;

@@ -474,7 +474,14 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
     max-height: 88vh !important;
     overflow-y: auto;
     transition: opacity .2s ease;
+    outline: none !important;
   }
+
+  // Pas de contour de focus sur la modale / son contenu (Drupal y met le focus).
+  &:focus,
+  .ui-dialog-content:focus,
+  article:focus,
+  [tabindex]:focus { outline: none !important; }
 
   // L'image est bornée par la hauteur ; sa largeur (auto) détermine la largeur
   // de la modale, qui épouse ainsi l'œuvre.
