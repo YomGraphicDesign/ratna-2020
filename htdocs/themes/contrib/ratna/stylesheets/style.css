@@ -8209,7 +8209,7 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   margin: 0 !important;
   width: auto !important;
   max-width: 90vw !important;
-  background: #222 !important;
+  background: #000 !important;
   border: 0 !important;
   padding: 0;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
@@ -8257,7 +8257,7 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   display: none;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-content {
-  background: #222 !important;
+  background: #000 !important;
   color: #fff;
   padding: 18px;
   width: auto !important;
