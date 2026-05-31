@@ -220,6 +220,13 @@ ul.sf-menu.sf-style-default li li, ul.sf-menu.sf-style-default.sf-navbar > li > 
   margin-bottom: 25px; // = gutter horizontal ($grid-gutter-width)
 }
 
+// Les vignettes remplissent la largeur de leur colonne → l'écart horizontal
+// entre images = le gutter (25px) = l'écart vertical. Espacements identiques.
+.view .views-view-grid .row > [class*="col-"] img {
+  width: 100%;
+  height: auto;
+}
+
 #views-bootstrap-images-actualites-block-1 .img-responsive {
   width: 250px;
   @media (min-width: 1024px) {

@@ -8030,6 +8030,11 @@ ul.sf-menu.sf-style-default li li, ul.sf-menu.sf-style-default.sf-navbar > li > 
   margin-bottom: 25px;
 }
 
+.view .views-view-grid .row > [class*=col-] img {
+  width: 100%;
+  height: auto;
+}
+
 #views-bootstrap-images-actualites-block-1 .img-responsive {
   width: 250px;
 }
