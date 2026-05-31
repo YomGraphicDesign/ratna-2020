@@ -8273,6 +8273,12 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
 .ui-dialog.oeuvre-modal [tabindex]:focus {
   outline: none !important;
 }
+.ui-dialog.oeuvre-modal .contextual-region,
+.ui-dialog.oeuvre-modal .contextual-region:focus,
+.ui-dialog.oeuvre-modal .contextual-region:focus-within,
+.ui-dialog.oeuvre-modal .contextual-region:hover {
+  outline: none !important;
+}
 .ui-dialog.oeuvre-modal img {
   max-width: 100%;
   max-height: 78vh;

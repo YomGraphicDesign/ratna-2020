@@ -483,6 +483,13 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   article:focus,
   [tabindex]:focus { outline: none !important; }
 
+  // Pas de contour pointillé sur la région contextuelle (apparaît après la
+  // navigation AJAX) — on garde le crayon, on enlève juste le surlignage.
+  .contextual-region,
+  .contextual-region:focus,
+  .contextual-region:focus-within,
+  .contextual-region:hover { outline: none !important; }
+
   // L'image est bornée par la hauteur ; sa largeur (auto) détermine la largeur
   // de la modale, qui épouse ainsi l'œuvre.
   img {
