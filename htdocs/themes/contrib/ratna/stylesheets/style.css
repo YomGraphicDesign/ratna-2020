@@ -8251,7 +8251,7 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   font-size: 30px;
   line-height: 31px;
   text-align: center;
-  color: #fff;
+  color: #222;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-icon {
   display: none;
