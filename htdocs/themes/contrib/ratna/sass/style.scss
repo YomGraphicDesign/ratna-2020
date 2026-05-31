@@ -430,33 +430,38 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
 
   .ui-dialog-title { display: none; }
 
-  // Croix : pastille blanche bien visible, en haut à droite, au-dessus de tout.
+  // Croix : pastille blanche bien visible. Le × est dessiné en CSS (::before)
+  // car le bouton jQuery UI est vide (icône via background, écrasée ici).
   .ui-dialog-titlebar-close {
     position: absolute !important;
     top: 10px !important;
     right: 10px !important;
     margin: 0 !important;
     z-index: 1000;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
     width: 40px;
     height: 40px;
+    padding: 0;
     background: #fff !important;
     border: 0 !important;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .4);
-    opacity: 1;
+    font-size: 0;
+    line-height: 0;
     cursor: pointer;
+    overflow: hidden;
 
     &:hover { background: #eee !important; }
 
-    .ui-icon {
-      filter: none;
-      margin: 0 !important;
-      top: auto !important;
-      left: auto !important;
+    &::before {
+      content: "\00d7"; // ×
+      display: block;
+      font-size: 30px;
+      line-height: 40px;
+      text-align: center;
+      color: #222;
     }
+
+    .ui-icon { display: none; }
   }
 
   // Contenu : fond sombre, défile si l'œuvre dépasse la hauteur.
