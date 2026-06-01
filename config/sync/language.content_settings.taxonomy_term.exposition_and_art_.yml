@@ -1,0 +1,11 @@
+uuid: 48c733c3-b275-4368-b1d0-c9c5e6150e12
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.exposition_and_art_
+id: taxonomy_term.exposition_and_art_
+target_entity_type_id: taxonomy_term
+target_bundle: exposition_and_art_
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,15 @@
+uuid: 04a1fdc1-288c-4ef4-bae2-9159b6f6b68f
+langcode: fr
+status: true
+dependencies: {  }
+name: actualite_accueil
+label: 'actualité accueil'
+effects:
+  050ef489-b631-4c6d-8b23-d86444dcb215:
+    uuid: 050ef489-b631-4c6d-8b23-d86444dcb215
+    id: image_scale
+    weight: 1
+    data:
+      width: 178
+      height: null
+      upscale: false

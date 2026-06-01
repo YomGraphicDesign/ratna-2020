@@ -1,0 +1,12 @@
+uuid: fabe3f3d-0f15-4b8b-a055-5bd900339063
+langcode: fr
+status: true
+dependencies: {  }
+label: Diaporama
+id: diaporama
+description: ''
+aspect_ratio: '1200:600'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

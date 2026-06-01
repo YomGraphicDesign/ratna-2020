@@ -7835,6 +7835,36 @@ body {
   transition: none !important;
 }
 
+#off-canvas:not(.mm-menu) {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #block-mainnavigation,
+  .block-superfish,
+  ul.sf-menu {
+    display: none;
+  }
+  .navbar-brand,
+  .navbar-default .navbar-text {
+    margin-left: 0;
+  }
+}
+.responsive-menu-toggle-icon .label,
+#toggle-icon .label {
+  display: none;
+}
+
+.responsive-menu-toggle {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+.responsive-menu-page-wrapper {
+  display: flow-root;
+}
+
 .container {
   margin-top: 25px;
 }

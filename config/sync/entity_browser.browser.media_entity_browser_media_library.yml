@@ -1,0 +1,55 @@
+uuid: 83936264-f77e-436c-8141-504e7d263727
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.media_entity_browser_media_library
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+_core:
+  default_config_hash: cVce1wq8rNNcosWnMLyjsjNUGYhJ9bVMZ-whh77pIdo
+name: media_entity_browser_media_library
+label: 'Media Entity Browser (Media Library)'
+display: modal
+display_configuration:
+  width: '1070'
+  height: '800'
+  link_text: 'Sélectionner le(s) média(s)'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  552cfb05-063f-47a9-81d1-e1260fc8a402:
+    id: view
+    uuid: 552cfb05-063f-47a9-81d1-e1260fc8a402
+    label: 'Choisir des médias existants'
+    weight: -8
+    settings:
+      submit_text: 'Sélectionner le(s) média(s)'
+      auto_select: false
+      view: media_entity_browser_media_library
+      view_display: media_browser_all
+  343fe14c-e758-4f0c-b80b-b248f3124f04:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: 343fe14c-e758-4f0c-b80b-b248f3124f04
+    label: 'Chargement des médias'
+    weight: -10
+    settings:
+      submit_text: 'Sélectionner le(s) média(s)'
+      upload_location: 'public://oeuvres'
+      dropzone_description: 'Glissez-déposez vos fichiers ici'
+      max_filesize: 100M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: 1.0
+      resize_method: contain
+      thumbnail_method: contain
+      media_type: image
+      form_mode: media_library

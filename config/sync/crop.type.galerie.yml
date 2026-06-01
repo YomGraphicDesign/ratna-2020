@@ -1,0 +1,12 @@
+uuid: eeebc8af-7c6b-409a-8963-5e4df5ccaa0c
+langcode: fr
+status: true
+dependencies: {  }
+label: Galerie
+id: galerie
+description: ''
+aspect_ratio: '1:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 168
+hard_limit_height: 168

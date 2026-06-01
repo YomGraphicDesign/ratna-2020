@@ -1,0 +1,172 @@
+uuid: aaeeb700-5ca1-4315-b8d5-6fa3bea399e8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.oeuvre.field_annee
+    - field.field.node.oeuvre.field_diaporama_accueil
+    - field.field.node.oeuvre.field_galerie
+    - field.field.node.oeuvre.field_image_oeuvre
+    - field.field.node.oeuvre.field_taille
+    - field.field.node.oeuvre.field_technique
+    - field.field.node.oeuvre.layout_builder__layout
+    - node.type.oeuvre
+  module:
+    - layout_builder
+    - layout_discovery
+    - options
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          c2a1c4a4-a458-4b49-8d81-142e0ce51cd1:
+            uuid: c2a1c4a4-a458-4b49-8d81-142e0ce51cd1
+            region: content
+            configuration:
+              id: 'field_block:node:oeuvre:title'
+              label: Titre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          a9c4852c-fd1c-4d0b-9dbf-2b3f0688ec40:
+            uuid: a9c4852c-fd1c-4d0b-9dbf-2b3f0688ec40
+            region: content
+            configuration:
+              id: 'field_block:node:oeuvre:field_image_oeuvre'
+              label: "Image de l'œuvre"
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: full
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: technique
+          context_mapping: {  }
+        components:
+          76524f30-e8bd-4085-a426-918070fe8a5a:
+            uuid: 76524f30-e8bd-4085-a426-918070fe8a5a
+            region: content
+            configuration:
+              id: 'field_block:node:oeuvre:field_technique'
+              label: Technique
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: list_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a8313fe0-c2d3-4f32-8b9f-10fcbba8df02:
+            uuid: a8313fe0-c2d3-4f32-8b9f-10fcbba8df02
+            region: content
+            configuration:
+              id: 'field_block:node:oeuvre:field_taille'
+              label: Taille
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: list_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.oeuvre.default
+targetEntityType: node
+bundle: oeuvre
+mode: default
+content:
+  field_annee:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_diaporama_accueil:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_galerie:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_image_oeuvre:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_taille:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_technique:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

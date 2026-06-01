@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: 6XRelHPjACQVOo9yRQMmbXt-ysCA2Pt6l762bxQQbdw
+exclude:
+  node:
+    actualite:
+      - field_date
+  paragraph: {  }
+text_to_prepend_to_title: 'Clone de'
+clone_status: default

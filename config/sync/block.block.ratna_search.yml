@@ -1,0 +1,23 @@
+uuid: 741a334a-5f84-4af3-8c41-4c739fe92d68
+langcode: fr
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - ratna
+_core:
+  default_config_hash: Q-4EcGAsu26ICu4ejEz0uE1zv4akpiaOsizxgZfAmEw
+id: ratna_search
+theme: ratna
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Rechercher
+  label_display: visible
+  provider: search
+  page_id: node_search
+visibility: {  }

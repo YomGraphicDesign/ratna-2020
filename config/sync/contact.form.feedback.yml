@@ -1,0 +1,14 @@
+uuid: b477b929-2d20-4f95-91dc-a97db7eb53eb
+langcode: fr
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Retours utilisateurs sur le site web'
+recipients:
+  - g.guerrier@yomgraphicdesign.fr
+reply: ''
+weight: 0
+message: 'Votre message &agrave; &eacute;t&eacute; envoy&eacute;.'
+redirect: ''

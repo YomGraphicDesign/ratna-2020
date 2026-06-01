@@ -1,0 +1,23 @@
+uuid: 1ea5bf5a-b691-45f2-9a99-44e92a8b0c6c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mise_en_avant_accueil
+    - node.type.actualite
+id: node.actualite.field_mise_en_avant_accueil
+field_name: field_mise_en_avant_accueil
+entity_type: node
+bundle: actualite
+label: 'mise en avant accueil'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Oui
+  off_label: Non
+field_type: boolean

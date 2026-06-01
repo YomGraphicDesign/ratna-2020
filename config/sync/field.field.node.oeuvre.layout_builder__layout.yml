@@ -1,0 +1,21 @@
+uuid: bf760544-f9ce-4a59-9398-a15540ea3cab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.oeuvre
+  module:
+    - layout_builder
+id: node.oeuvre.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: oeuvre
+label: Affichage
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

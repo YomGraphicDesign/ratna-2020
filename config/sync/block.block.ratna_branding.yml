@@ -1,0 +1,25 @@
+uuid: 77770ce6-a662-4f33-b632-0a69bc03533b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ratna
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: ratna_branding
+theme: ratna
+region: navigation
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marque du site'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

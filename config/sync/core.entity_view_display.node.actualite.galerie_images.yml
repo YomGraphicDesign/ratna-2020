@@ -1,0 +1,81 @@
+uuid: 2c740775-0216-406c-9458-be0cdca2deab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.galerie_images
+    - field.field.node.actualite.body
+    - field.field.node.actualite.field_date
+    - field.field.node.actualite.field_fichier
+    - field.field.node.actualite.field_image_principale
+    - field.field.node.actualite.field_images
+    - field.field.node.actualite.field_mise_en_avant_accueil
+    - field.field.node.actualite.field_sous_titre
+    - field.field.node.actualite.layout_builder__layout
+    - node.type.actualite
+  module:
+    - datetime
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.actualite.galerie_images
+targetEntityType: node
+bundle: actualite
+mode: galerie_images
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_image_principale:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_images:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_sous_titre:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_fichier: true
+  field_mise_en_avant_accueil: true
+  langcode: true
+  layout_builder__layout: true

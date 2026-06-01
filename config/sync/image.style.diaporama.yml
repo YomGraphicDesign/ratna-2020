@@ -1,0 +1,25 @@
+uuid: 759216ef-9070-464a-9e82-78e68cbfccc7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.diaporama
+  module:
+    - crop
+name: diaporama
+label: Diaporama
+effects:
+  25cf9c32-aa56-4df8-a724-b11446eb6cef:
+    uuid: 25cf9c32-aa56-4df8-a724-b11446eb6cef
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: diaporama
+  c9d6b0c6-c71e-4fc5-8384-97f6cbfa7545:
+    uuid: c9d6b0c6-c71e-4fc5-8384-97f6cbfa7545
+    id: image_scale
+    weight: 2
+    data:
+      width: 1200
+      height: null
+      upscale: true

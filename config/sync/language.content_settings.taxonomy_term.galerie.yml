@@ -1,0 +1,11 @@
+uuid: 4f12f039-9e55-4bda-b7d5-f1ad03331ad2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.galerie
+id: taxonomy_term.galerie
+target_entity_type_id: taxonomy_term
+target_bundle: galerie
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: 20a2df42-9184-42d4-bc93-cdb47324db04
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_taille
+    - node.type.oeuvre
+  module:
+    - options
+id: node.oeuvre.field_taille
+field_name: field_taille
+entity_type: node
+bundle: oeuvre
+label: Taille
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

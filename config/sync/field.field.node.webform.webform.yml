@@ -1,0 +1,31 @@
+uuid: 84206eb9-a2d1-4193-8eb1-0af578a27684
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.webform
+    - node.type.webform
+  module:
+    - webform
+_core:
+  default_config_hash: w6hvTj8CaO8YVQDnlsD-jRBzMA_vNmx2cXLEKX13yT4
+id: node.webform.webform
+field_name: webform
+entity_type: node
+bundle: webform
+label: Webform
+description: 'Sélectionner le formulaire que vous souhaitez lier à ce nœud.'
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: ''
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings: {  }
+field_type: webform

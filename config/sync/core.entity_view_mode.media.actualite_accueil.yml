@@ -1,0 +1,11 @@
+uuid: f02ddaf8-8c4e-4cab-b82f-22bb9a89aa11
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.actualite_accueil
+label: 'Actualité accueil'
+description: ''
+targetEntityType: media
+cache: true

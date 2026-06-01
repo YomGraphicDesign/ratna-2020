@@ -1,0 +1,9 @@
+uuid: 654deef4-d017-4960-9eab-51db8102bff0
+langcode: fr
+status: true
+dependencies: {  }
+name: "Exposition And'Art"
+vid: exposition_and_art_
+description: 'du 15 au 30 septembre 2022'
+weight: 0
+new_revision: false

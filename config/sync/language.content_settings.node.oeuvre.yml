@@ -1,0 +1,11 @@
+uuid: bea106f0-ba4b-4702-8fcc-4c19914f861b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.oeuvre
+id: node.oeuvre
+target_entity_type_id: node
+target_bundle: oeuvre
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,22 @@
+uuid: 14c29b4b-334b-4bd2-b412-141ea99c7366
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.oeuvre
+id: node.oeuvre.promote
+field_name: promote
+entity_type: node
+bundle: oeuvre
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

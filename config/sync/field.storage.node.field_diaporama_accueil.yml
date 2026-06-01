@@ -1,0 +1,18 @@
+uuid: 5aadff5f-0c48-4b21-ad24-4a0d4b0df3c5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_diaporama_accueil
+field_name: field_diaporama_accueil
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

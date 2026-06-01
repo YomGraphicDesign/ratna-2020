@@ -1,0 +1,22 @@
+uuid: fafdf7ff-2cb0-4f88-b4a4-45e73137e37c
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - ratna
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: ratna_local_tasks
+theme: ratna
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Onglets
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

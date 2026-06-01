@@ -1,0 +1,11 @@
+uuid: 0fd5cd28-bccc-4e58-bb78-1886ed7e5a33
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.vignette_actualite
+label: 'Vignette actualité'
+description: ''
+targetEntityType: media
+cache: true

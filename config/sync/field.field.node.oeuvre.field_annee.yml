@@ -1,0 +1,21 @@
+uuid: 2bf3a0e3-07e2-4d9f-94b8-5aedfdb2a26b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annee
+    - node.type.oeuvre
+  module:
+    - options
+id: node.oeuvre.field_annee
+field_name: field_annee
+entity_type: node
+bundle: oeuvre
+label: Année
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

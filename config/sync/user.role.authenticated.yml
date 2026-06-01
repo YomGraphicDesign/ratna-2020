@@ -1,0 +1,134 @@
+uuid: 35d219cb-ad87-4512-90b6-d04816c86e10
+langcode: fr
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser_modal_files
+    - entity_browser.browser.media_entity_browser_media_library
+    - filter.format.full_html
+    - filter.format.webform_default
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.actualite
+    - node.type.oeuvre
+    - node.type.page
+    - taxonomy.vocabulary.galerie
+  module:
+    - block
+    - block_content
+    - contact
+    - contextual
+    - draggableviews
+    - dropzonejs
+    - entity_browser
+    - file
+    - filter
+    - google_analytics
+    - google_analytics_reports
+    - google_analytics_reports_api
+    - help
+    - media
+    - node
+    - search
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+    - webform
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Utilisateur authentifié'
+weight: 1
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access block library'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access draggableviews'
+  - 'access files overview'
+  - 'access google analytics reports'
+  - 'access help pages'
+  - 'access media overview'
+  - 'access media_browser_modal_files entity browser pages'
+  - 'access media_entity_browser_media_library entity browser pages'
+  - 'access shortcuts'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access site-wide contact form'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access webform submission user'
+  - 'administer block content'
+  - 'administer block types'
+  - 'administer blocks'
+  - 'administer google analytics reports api'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'administer taxonomy'
+  - 'administer webform submission'
+  - 'create actualite content'
+  - 'create audio media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create oeuvre content'
+  - 'create page content'
+  - 'create remote_video media'
+  - 'create terms in galerie'
+  - 'create video media'
+  - 'delete any actualite content'
+  - 'delete any audio media'
+  - 'delete any document media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any oeuvre content'
+  - 'delete any page content'
+  - 'delete any remote_video media'
+  - 'delete any video media'
+  - 'delete media'
+  - 'delete own actualite content'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own files'
+  - 'delete own image media'
+  - 'delete own oeuvre content'
+  - 'delete own page content'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'delete terms in galerie'
+  - 'dropzone upload files'
+  - 'edit any actualite content'
+  - 'edit any audio media'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any oeuvre content'
+  - 'edit any page content'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit own actualite content'
+  - 'edit own audio media'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own oeuvre content'
+  - 'edit own page content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'edit terms in galerie'
+  - 'opt-in or out of google analytics tracking'
+  - 'rebuild node access permissions'
+  - 'search content'
+  - 'update any media'
+  - 'update media'
+  - 'use text format full_html'
+  - 'use text format webform_default'
+  - 'view all media revisions'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'

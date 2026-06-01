@@ -1,0 +1,23 @@
+uuid: 98ef53f9-4e63-46cf-b84e-3c10753eed03
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.oeuvre
+  module:
+    - node
+id: oeuvre
+label: oeuvre
+type: 'canonical_entities:node'
+pattern: '/[node:field_galerie:entity:name]/oeuvre/[node:title]'
+selection_criteria:
+  ea493ee6-f4b9-4ee8-a0a2-0f4708e91d81:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      oeuvre: oeuvre
+selection_logic: and
+weight: -5
+relationships: {  }

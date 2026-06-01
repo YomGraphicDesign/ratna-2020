@@ -1,0 +1,28 @@
+uuid: 2b0181e4-c34f-48de-abc6-a2d59894f14a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_oeuvre
+    - media.type.image
+    - node.type.oeuvre
+id: node.oeuvre.field_image_oeuvre
+field_name: field_image_oeuvre
+entity_type: node
+bundle: oeuvre
+label: "Image de l'œuvre"
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

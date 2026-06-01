@@ -1,0 +1,16 @@
+uuid: 0a53d6c2-3603-443e-a191-94305e1ecd1e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.main
+    - taxonomy.vocabulary.galerie
+id: galerie
+label: Galerie
+vocabulary: galerie
+menu: main
+expanded: true
+depth: 8
+menu_parent: 'main:menu_link_content:3d072dbf-29e8-452f-bfe0-adf3595f7f33'
+description_field_name: ''
+use_term_weight_order: true

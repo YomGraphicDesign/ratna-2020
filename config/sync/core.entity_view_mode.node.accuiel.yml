@@ -1,0 +1,11 @@
+uuid: f6637e23-cc7b-4cdd-a226-a3d4d637b046
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.accuiel
+label: Accueil
+description: ''
+targetEntityType: node
+cache: true

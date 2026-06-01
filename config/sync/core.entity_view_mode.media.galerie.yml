@@ -1,0 +1,11 @@
+uuid: ab05ad48-c5a4-43e1-bcda-a405fbbb6035
+langcode: fr
+status: true
+dependencies:
+  module:
+    - media
+id: media.galerie
+label: Galerie
+description: ''
+targetEntityType: media
+cache: true

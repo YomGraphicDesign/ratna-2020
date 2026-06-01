@@ -1,0 +1,23 @@
+uuid: 048ccba6-35fb-4660-92d9-1e01cd0692fc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - webform_node
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: BuY_3PjmYtRTSuvyFORJZUe0-TQiNXEE6yYQ_dkjxW8
+name: Webform
+type: webform
+description: 'A basic page with a webform attached.'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: false

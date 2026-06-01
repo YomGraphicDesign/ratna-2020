@@ -1,0 +1,83 @@
+uuid: 38d0daf6-3cd9-42f4-a1f5-065879c75b4d
+langcode: fr
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.oeuvre.field_annee
+    - field.field.node.oeuvre.field_diaporama_accueil
+    - field.field.node.oeuvre.field_galerie
+    - field.field.node.oeuvre.field_image_oeuvre
+    - field.field.node.oeuvre.field_taille
+    - field.field.node.oeuvre.field_technique
+    - field.field.node.oeuvre.layout_builder__layout
+    - node.type.oeuvre
+  module:
+    - layout_builder
+    - options
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.oeuvre.full
+targetEntityType: node
+bundle: oeuvre
+mode: full
+content:
+  field_annee:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_diaporama_accueil:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_galerie:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_image_oeuvre:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_taille:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_technique:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true

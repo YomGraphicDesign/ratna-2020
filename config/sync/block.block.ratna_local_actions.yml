@@ -1,0 +1,20 @@
+uuid: cc7e7ef9-1021-4f60-8c69-efc64bbd397f
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - ratna
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: ratna_local_actions
+theme: ratna
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: "Actions d'administration principales"
+  label_display: '0'
+  provider: core
+visibility: {  }

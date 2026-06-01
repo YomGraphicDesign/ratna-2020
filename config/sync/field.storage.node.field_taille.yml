@@ -1,0 +1,201 @@
+uuid: ed1dcec8-bf0c-4019-99bc-d7e9866d15ca
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_taille
+field_name: field_taille
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '50 x 65 cm'
+      label: '50 x 65 cm'
+    -
+      value: '50 x 150 cm'
+      label: '50 x 150 cm'
+    -
+      value: '80 x 20 cm'
+      label: '80 x 20 cm'
+    -
+      value: '73 x 60 cm'
+      label: '73 x 60 cm'
+    -
+      value: '60 x 30 cm'
+      label: '60 x 30 cm'
+    -
+      value: '50 X 50 cm'
+      label: '50 X 50 cm'
+    -
+      value: '150 x 50 cm'
+      label: '150 x 50 cm'
+    -
+      value: '100 x 50 cm'
+      label: '100 x 50 cm'
+    -
+      value: '120 X 40 cm'
+      label: '120 X 40 cm'
+    -
+      value: '81 x 60 cm'
+      label: '81 x 60 cm'
+    -
+      value: '70 x 70 cm'
+      label: '70 x 70 cm'
+    -
+      value: '40 x 40 cm'
+      label: '40 x 40 cm'
+    -
+      value: '80 x 40 cm'
+      label: '80 x 40 cm'
+    -
+      value: '81 x 65 cm'
+      label: '81 x 65 cm'
+    -
+      value: '100 x 80 cm'
+      label: '100 x 80 cm'
+    -
+      value: '90 x 90 cm'
+      label: '90 x 90 cm'
+    -
+      value: '90 x 70'
+      label: '90 x 70'
+    -
+      value: '120 x 90 cm'
+      label: '120 x 90 cm'
+    -
+      value: '80 x 80 cm'
+      label: '80 x 80 cm'
+    -
+      value: '40 x 26 cm'
+      label: '40 x 26 cm'
+    -
+      value: '60 x 60 cm'
+      label: '60 x 60 cm'
+    -
+      value: '116 x 90'
+      label: '116 x 90'
+    -
+      value: '90 x 60 cm'
+      label: '90 x 60 cm'
+    -
+      value: '80 x 70 cm'
+      label: '80 x 70 cm'
+    -
+      value: '100 x 40 cm'
+      label: '100 x 40 cm'
+    -
+      value: '93 x 75 cm'
+      label: '93 x 75 cm'
+    -
+      value: '70 x 50 cm'
+      label: '70 x 50 cm'
+    -
+      value: '92 x 65 cm'
+      label: '92 x 65 cm'
+    -
+      value: '90 x 30 cm'
+      label: '90 x 30 cm'
+    -
+      value: '46 x 36 cm'
+      label: '46 x 36 cm'
+    -
+      value: '60 x 50 cm'
+      label: '60 x 50 cm'
+    -
+      value: '24 x 19 cm'
+      label: '24 x 19 cm'
+    -
+      value: '41 x 27 cm'
+      label: '41 x 27 cm'
+    -
+      value: '120 x 60 cm'
+      label: '120 x 60 cm'
+    -
+      value: '46 x 38 cm'
+      label: '46 x 38 cm'
+    -
+      value: '20 x 20 cm'
+      label: '20 x 20 cm'
+    -
+      value: '61 x 39 cm'
+      label: '61 x 39 cm'
+    -
+      value: '90 x 70 cm'
+      label: '90 x 70 cm'
+    -
+      value: '60 x 46 cm'
+      label: '60 x 46 cm'
+    -
+      value: '100 x 73 cm'
+      label: '100 x 73 cm'
+    -
+      value: '73 x 54 cm'
+      label: '73 x 54 cm'
+    -
+      value: '116 x 88 cm'
+      label: '116 x 88 cm'
+    -
+      value: '73 x 61 cm'
+      label: '73 x 61 cm'
+    -
+      value: '73 x 50 cm'
+      label: '73 x 50 cm'
+    -
+      value: '116 x 90 cm'
+      label: '116 x 90 cm'
+    -
+      value: '150 x 100 cm'
+      label: '150 x 100 cm'
+    -
+      value: '45 x 30 cm'
+      label: '45 x 30 cm'
+    -
+      value: '46 x 55 cm'
+      label: '46 x 55 cm'
+    -
+      value: '92 x 73 cm'
+      label: '92 x 73 cm'
+    -
+      value: '61 x 50 cm'
+      label: '61 x 50 cm'
+    -
+      value: '90 x 61 cm'
+      label: '90 x 61 cm'
+    -
+      value: '60 x 40 cm'
+      label: '60 x 40 cm'
+    -
+      value: '30 x 30 cm'
+      label: '30 x 30 cm'
+    -
+      value: '100 x 70 cm'
+      label: '100 x 70 cm'
+    -
+      value: '50 x 50 cm'
+      label: '50 x 50 cm'
+    -
+      value: '70 x 60 cm'
+      label: '70 x 60 cm'
+    -
+      value: '83 x 83 cm'
+      label: '83 x 83 cm'
+    -
+      value: '60 x 20 cm'
+      label: '60 x 20 cm'
+    -
+      value: '80 x 60 cm'
+      label: '80 x 60 cm'
+    -
+      value: '20 x 40 cm'
+      label: '20 x 40 cm'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

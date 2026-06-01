@@ -1,0 +1,22 @@
+uuid: fd1dfb34-7dce-4867-b543-bf8bc365eef1
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ratna
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: ratna_powered
+theme: ratna
+region: navigation
+weight: -1
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Propulsé par Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,53 @@
+uuid: 14e620cd-48c4-49c7-8fab-6549cb4d68b7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - media.type.document
+    - views.view.media_entity_browser_media_library
+  module:
+    - dropzonejs_eb_widget
+    - media
+    - views
+name: media_browser_modal_files
+label: 'media browser modal files'
+display: modal
+display_configuration:
+  width: '1070'
+  height: '800'
+  link_text: 'Sélectionner le(s) média(s)'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  7b12b671-a7e1-4011-b6db-698a4e4e6dab:
+    id: dropzonejs_media_entity_inline_entity_form
+    uuid: 7b12b671-a7e1-4011-b6db-698a4e4e6dab
+    label: 'téléchargement de fichiers'
+    weight: 1
+    settings:
+      submit_text: 'Sélectionner les médias'
+      upload_location: 'public://fichiers'
+      dropzone_description: 'glissez-déposez vos fichiers ici'
+      max_filesize: 128M
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: 1.0
+      resize_method: contain
+      thumbnail_method: contain
+      media_type: document
+      form_mode: default
+  37718093-8eb1-403b-83fa-3182646050c3:
+    id: view
+    uuid: 37718093-8eb1-403b-83fa-3182646050c3
+    label: Bibliothèque
+    weight: 2
+    settings:
+      submit_text: 'Sélectionner les médias'
+      auto_select: false
+      view: media_entity_browser_media_library
+      view_display: media_browser_all

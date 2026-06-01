@@ -1,0 +1,27 @@
+uuid: 19b9b8b2-eb58-4d4f-8d05-cfbf8d68eae5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_technique
+field_name: field_technique
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Acrylique
+      label: Acrylique
+    -
+      value: Pastel
+      label: Pastel
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

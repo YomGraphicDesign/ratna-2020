@@ -1,0 +1,35 @@
+uuid: 54dc1d48-994a-44e1-a084-de98cbe6caf0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.oeuvre.field_annee
+    - field.field.node.oeuvre.field_diaporama_accueil
+    - field.field.node.oeuvre.field_galerie
+    - field.field.node.oeuvre.field_image_oeuvre
+    - field.field.node.oeuvre.field_taille
+    - field.field.node.oeuvre.field_technique
+    - field.field.node.oeuvre.layout_builder__layout
+    - node.type.oeuvre
+  module:
+    - user
+id: node.oeuvre.teaser
+targetEntityType: node
+bundle: oeuvre
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_annee: true
+  field_diaporama_accueil: true
+  field_galerie: true
+  field_image_oeuvre: true
+  field_taille: true
+  field_technique: true
+  langcode: true
+  layout_builder__layout: true

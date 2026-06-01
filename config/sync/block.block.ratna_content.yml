@@ -1,0 +1,22 @@
+uuid: 1974afdb-4c7c-4fd5-87d2-772812556789
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ratna
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: ratna_content
+theme: ratna
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  label_display: '0'
+  provider: system
+visibility: {  }

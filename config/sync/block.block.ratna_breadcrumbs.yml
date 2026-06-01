@@ -1,0 +1,22 @@
+uuid: edabd764-7c3e-48a4-a057-6a61b2aeeb67
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ratna
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: ratna_breadcrumbs
+theme: ratna
+region: navigation
+weight: -5
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: "Fils d'ariane"
+  label_display: '0'
+  provider: system
+visibility: {  }

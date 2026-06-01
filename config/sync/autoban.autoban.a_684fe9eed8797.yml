@@ -1,0 +1,13 @@
+id: a_684fe9eed8797
+uuid: fdcbb234-3af0-4b24-9570-791f19787909
+type: 'page not found'
+message: '@uri'
+referer: null
+threshold: 5
+window: none
+provider: ban
+user_type: null
+rule_type: 2
+langcode: fr
+status: true
+dependencies: {  }

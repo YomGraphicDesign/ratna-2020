@@ -1,0 +1,23 @@
+uuid: 21dcb0eb-8b4b-4857-bda5-40596964dfa8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.galerie
+  module:
+    - taxonomy
+id: taxonomy_term
+label: 'Termes de taxonomie'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/[term:name]'
+selection_criteria:
+  65bfe887-f37b-4146-968c-4d0afd88fca1:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      galerie: galerie
+selection_logic: and
+weight: -5
+relationships: {  }

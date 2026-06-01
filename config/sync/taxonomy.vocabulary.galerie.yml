@@ -1,0 +1,9 @@
+uuid: e06030f7-5633-4c95-9eb2-c6879702cc32
+langcode: fr
+status: true
+dependencies: {  }
+name: Galerie
+vid: galerie
+description: null
+weight: 0
+new_revision: false

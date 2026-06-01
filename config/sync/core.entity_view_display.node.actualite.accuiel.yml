@@ -1,0 +1,166 @@
+uuid: 3a5d8707-d65f-495e-b95c-9ac4bc79161e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.accuiel
+    - field.field.node.actualite.body
+    - field.field.node.actualite.field_date
+    - field.field.node.actualite.field_fichier
+    - field.field.node.actualite.field_image_principale
+    - field.field.node.actualite.field_images
+    - field.field.node.actualite.field_mise_en_avant_accueil
+    - field.field.node.actualite.field_sous_titre
+    - field.field.node.actualite.layout_builder__layout
+    - node.type.actualite
+  module:
+    - datetime
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          column_widths: 25-75
+          context_mapping: {  }
+        components:
+          b5c3071f-6876-4e9a-81fb-bb7d3a29c79c:
+            uuid: b5c3071f-6876-4e9a-81fb-bb7d3a29c79c
+            region: first
+            configuration:
+              id: 'field_block:node:actualite:field_image_principale'
+              label: 'Image principale'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: actualite_accueil
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e4d9df5f-a9b3-495a-82d8-b0c50f5c2d1a:
+            uuid: e4d9df5f-a9b3-495a-82d8-b0c50f5c2d1a
+            region: second
+            configuration:
+              id: 'field_block:node:actualite:title'
+              label: Titre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          911cd6de-1a3e-4242-a906-9000e395057b:
+            uuid: 911cd6de-1a3e-4242-a906-9000e395057b
+            region: second
+            configuration:
+              id: 'field_block:node:actualite:field_sous_titre'
+              label: Sous-titre
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          8f8f65d9-17b9-4a66-af27-35f96f11046b:
+            uuid: 8f8f65d9-17b9-4a66-af27-35f96f11046b
+            region: second
+            configuration:
+              id: 'field_block:node:actualite:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_trimmed
+                label: hidden
+                settings:
+                  trim_length: 100
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.actualite.accuiel
+targetEntityType: node
+bundle: actualite
+mode: accuiel
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_image_principale:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_images:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_sous_titre:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_fichier: true
+  field_mise_en_avant_accueil: true
+  langcode: true
+  layout_builder__layout: true

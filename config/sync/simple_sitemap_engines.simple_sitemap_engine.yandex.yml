@@ -1,0 +1,9 @@
+uuid: 8ba6a8bf-b142-4f8a-8f08-aa51300c5574
+langcode: fr
+status: true
+dependencies: {  }
+id: yandex
+label: Yandex
+url: null
+index_now_url: 'https://yandex.com/indexnow?url=[url]&key=[key]'
+sitemap_variants: null

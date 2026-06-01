@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: JTiHOl3PIo9Nyv7j53xwY5OwbwJWwCItksgv_X-NcbE
+settings:
+  library_url: ''
+  css_url: ''
+  crop_preview_image_style: crop_thumbnail
+  crop_list:
+    diaporama: diaporama
+    galerie: galerie
+  crop_types_required:
+    diaporama: diaporama
+    galerie: galerie
+  warn_multiple_usages: true
+  show_default_crop: true
+  show_crop_area: true
+  notify_apply: false
+  notify_update: true

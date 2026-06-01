@@ -1,0 +1,20 @@
+uuid: a12a5f80-d4b3-4d17-b4cf-52abcc94f02c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - responsive_menu
+  theme:
+    - ratna
+id: ratna_responsive_menu_toggle
+theme: ratna
+region: navigation
+weight: -10
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  label_display: '0'
+  provider: responsive_menu
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 7c66b824-b855-4c40-a3c5-dbd0ca524732
+langcode: fr
+status: true
+dependencies: {  }
+id: index_now
+label: IndexNow
+url: null
+index_now_url: 'https://api.indexnow.org/indexnow?url=[url]&key=[key]'
+sitemap_variants: null

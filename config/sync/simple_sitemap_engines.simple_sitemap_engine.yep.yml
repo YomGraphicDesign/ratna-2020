@@ -1,0 +1,9 @@
+uuid: ce49f492-e5d4-4d04-9902-d8dc45634a7f
+langcode: fr
+status: true
+dependencies: {  }
+id: yep
+label: Yep
+url: null
+index_now_url: 'https://indexnow.yep.com/indexnow?url=[url]&key=[key]'
+sitemap_variants: null

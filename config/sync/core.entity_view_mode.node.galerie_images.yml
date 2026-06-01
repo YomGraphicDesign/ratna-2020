@@ -1,0 +1,11 @@
+uuid: 48a1c398-8ca3-4064-aed0-d73d0fd12bc0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.galerie_images
+label: 'galerie images'
+description: ''
+targetEntityType: node
+cache: true

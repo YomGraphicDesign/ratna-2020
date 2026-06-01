@@ -1,0 +1,13 @@
+uuid: 427163b0-069d-4886-80f3-bd1d91ef2469
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.diaporama
+  theme:
+    - ratna
+id: diaporama
+label: Diaporama
+image_style_mappings: {  }
+breakpoint_group: ratna
+fallback_image_style: diaporama

@@ -27,6 +27,51 @@ body {
   transition: none !important;
 }
 
+// Anti-FOUC : le menu off-canvas (#off-canvas) est rendu en bas du DOM et reste
+// visible tant que mmenu ne l'a pas transformé. On le masque jusqu'à ce que
+// mmenu lui ajoute la classe .mm-menu (à l'initialisation).
+#off-canvas:not(.mm-menu) {
+  display: none;
+}
+
+// Sous le breakpoint (768px) : le menu desktop Superfish est masqué ; seul le
+// hamburger responsive_menu (panneau off-canvas) reste accessible sur mobile.
+@media (max-width: 767px) {
+  #block-mainnavigation,
+  .block-superfish,
+  ul.sf-menu {
+    display: none;
+  }
+
+  // Bootstrap applique margin-left:-15px sur .navbar-brand : sans override en
+  // mobile, le logo "Ratna" et "artiste peintre" sont coupés à gauche.
+  .navbar-brand,
+  .navbar-default .navbar-text {
+    margin-left: 0;
+  }
+}
+
+// Toggle hamburger : on masque le libellé "Menu", on ne garde que l'icône.
+.responsive-menu-toggle-icon .label,
+#toggle-icon .label {
+  display: none;
+}
+
+// Sort le toggle du flux pour ne pas casser la mise en page de l'en-tête.
+.responsive-menu-toggle {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+// Anti-CLS : sans BFC, body margin-top (20px) et .container margin-top (25px)
+// fusionnent (collapse). Quand mmenu ajoute .mm-slideout (position:relative),
+// la fusion se rompt et le contenu saute de +20px. On force le wrapper en
+// flow-root dès le départ → marges non fusionnées avant comme après → 0 saut.
+.responsive-menu-page-wrapper {
+  display: flow-root;
+}
+
 .container {
   margin-top: 25px;
 }

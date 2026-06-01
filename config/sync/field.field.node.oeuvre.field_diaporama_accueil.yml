@@ -1,0 +1,21 @@
+uuid: 29b71f55-30b7-488c-902a-c670096738e3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_diaporama_accueil
+    - node.type.oeuvre
+id: node.oeuvre.field_diaporama_accueil
+field_name: field_diaporama_accueil
+entity_type: node
+bundle: oeuvre
+label: 'Mise en avant diaporama accueil '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

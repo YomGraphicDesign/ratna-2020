@@ -1,0 +1,22 @@
+uuid: 70195b05-fc5d-46db-95eb-0c982c53831f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ratna
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: ratna_messages
+theme: ratna
+region: highlighted
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Messages de statut'
+  label_display: '0'
+  provider: system
+visibility: {  }

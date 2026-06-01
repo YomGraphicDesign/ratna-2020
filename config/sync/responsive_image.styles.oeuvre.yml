@@ -1,0 +1,19 @@
+uuid: 4870b4b3-2e7b-4352-bf52-9fbb8d3ca9dd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - image.style.max_1300x1300
+    - image.style.thumbnail
+  theme:
+    - ratna
+id: oeuvre
+label: Oeuvre
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: max_1300x1300
+    breakpoint_id: ratna.screen-lg-min
+    multiplier: 1x
+breakpoint_group: ratna
+fallback_image_style: thumbnail

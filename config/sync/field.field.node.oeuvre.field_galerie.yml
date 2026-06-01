@@ -1,0 +1,29 @@
+uuid: f1cc64b4-4860-464f-b96e-0d0c1091f488
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_galerie
+    - node.type.oeuvre
+    - taxonomy.vocabulary.galerie
+id: node.oeuvre.field_galerie
+field_name: field_galerie
+entity_type: node
+bundle: oeuvre
+label: Galerie
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      galerie: galerie
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

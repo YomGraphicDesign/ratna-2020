@@ -1,0 +1,21 @@
+uuid: cb6b819d-691c-4520-8ee8-1d99b7f73adb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technique
+    - node.type.oeuvre
+  module:
+    - options
+id: node.oeuvre.field_technique
+field_name: field_technique
+entity_type: node
+bundle: oeuvre
+label: Technique
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
