@@ -1,4 +1,71 @@
-/**
- * @file
- * Subtheme specific CSS.
- */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+a,
+a:hover,
+a:focus {
+  color: #fff;
+}
+
+.navbar,
+#navbar-main,
+#navbar-top {
+  background-color: #000;
+  border: none;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar-brand {
+    font-size: 90px;
+  }
+}
+
+.site-slogan {
+  font-weight: 400;
+}
+
+.navbar-toggler {
+  display: none !important;
+}
+
+.responsive-menu-toggle-icon .label,
+#toggle-icon .label {
+  display: none;
+}
+
+.responsive-menu-toggle {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+#off-canvas:not(.mm-menu) {
+  display: none;
+}
+
+@media (max-width: 991.98px) {
+  #superfish-main,
+  ul.sf-menu {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .responsive-menu-toggle,
+  #toggle-icon {
+    display: none;
+  }
+}

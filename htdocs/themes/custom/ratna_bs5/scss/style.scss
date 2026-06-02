@@ -1,0 +1,73 @@
+// =========================================================================
+// Ratna BS5 — identité visuelle portée depuis le thème ratna (Bootstrap 3)
+// Compilé vers css/style.css (chargé par la lib global-styling).
+// =========================================================================
+
+$ratna-bg: #000;
+
+// --- Base ---
+body {
+  background-color: $ratna-bg;
+  color: #fff;
+}
+a,
+a:hover,
+a:focus {
+  color: #fff;
+}
+
+// --- Barres / navbar en noir ---
+.navbar,
+#navbar-main,
+#navbar-top {
+  background-color: $ratna-bg;
+  border: none;
+}
+
+// --- Logo "Ratna artiste peintre" ---
+.navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  padding: 0;
+
+  @media (min-width: 768px)  { font-size: 60px; }
+  @media (min-width: 1024px) { font-size: 90px; }
+}
+.site-slogan {
+  font-weight: 400;
+}
+
+// =========================================================================
+// Menus : superfish (desktop) + hamburger responsive_menu/mmenu (mobile)
+// Barrio = navbar-expand-lg -> bascule à 992px.
+// =========================================================================
+
+// On masque le toggle natif BS5 (on garde celui de responsive_menu)
+.navbar-toggler { display: none !important; }
+
+// Pas de libellé "Menu" sur le hamburger
+.responsive-menu-toggle-icon .label,
+#toggle-icon .label { display: none; }
+
+// Sort le toggle du flux (comme sur ratna)
+.responsive-menu-toggle {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+}
+
+// Anti-FOUC du menu off-canvas
+#off-canvas:not(.mm-menu) { display: none; }
+
+// Sous 992px : menu superfish masqué, hamburger visible
+@media (max-width: 991.98px) {
+  #superfish-main,
+  ul.sf-menu { display: none; }
+}
+// Au-dessus : hamburger masqué (superfish prend le relais)
+@media (min-width: 992px) {
+  .responsive-menu-toggle,
+  #toggle-icon { display: none; }
+}
