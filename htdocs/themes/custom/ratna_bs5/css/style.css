@@ -1,6 +1,14 @@
 @charset "UTF-8";
-body {
+html,
+body,
+.mm-page,
+.mm-slideout,
+.mm-wrapper_background,
+.mm-wrapper__blocker {
   background-color: #000 !important;
+}
+
+body {
   color: #fff;
 }
 
