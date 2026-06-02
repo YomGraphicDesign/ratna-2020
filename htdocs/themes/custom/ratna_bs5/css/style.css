@@ -648,3 +648,36 @@ button, input, select, textarea,
 #superfish-main > li.sfHover > span.nolink {
   color: #fff !important;
 }
+
+#superfish-main ul {
+  background: #fff !important;
+  border-bottom: 6px solid #000;
+  border-left: 6px solid #000;
+  border-right: 6px solid #000;
+}
+
+#superfish-main li {
+  background: #fff !important;
+}
+
+#superfish-main a,
+#superfish-main a:visited,
+#superfish-main span.nolink {
+  background: transparent !important;
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+#superfish-main li:hover,
+#superfish-main li.sfHover,
+#superfish-main a:hover,
+#superfish-main a:focus,
+#superfish-main a:active,
+#superfish-main a.is-active,
+#superfish-main span.nolink:hover,
+#superfish-main li:hover > span.nolink,
+#superfish-main li.sfHover > span.nolink {
+  background: #000 !important;
+  color: #fff !important;
+  outline: 0 !important;
+}
