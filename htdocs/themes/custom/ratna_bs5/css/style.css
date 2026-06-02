@@ -290,8 +290,8 @@ ul.sf-menu.sf-style-default a:hover {
 }
 @media (min-width: 1024px) {
   .view-taxonomy-term .view-header h2 {
-    top: -66px;
-    left: 240px;
+    top: -40px;
+    left: 216px;
     font-size: 24px;
     font-weight: 100;
   }
@@ -570,4 +570,8 @@ main.col {
 .view-accueil .slide__content {
   margin-left: auto;
   margin-right: auto;
+}
+
+.view-taxonomy-term {
+  position: relative;
 }
