@@ -1,7 +1,7 @@
 name: ratna-2020
 type: drupal11
 docroot: htdocs
-php_version: "8.5"
+php_version: "8.4"
 webserver_type: apache-fpm
 xdebug_enabled: false
 additional_hostnames: []
