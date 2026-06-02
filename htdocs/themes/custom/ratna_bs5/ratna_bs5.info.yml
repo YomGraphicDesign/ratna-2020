@@ -8,6 +8,7 @@ base theme: bootstrap_barrio
 libraries:
   - ratna_bs5/bootstrap_cdn
   - ratna_bs5/global-styling
+  - ratna_bs5/oeuvre_modal
 
 regions:
   top_header: 'Top header'

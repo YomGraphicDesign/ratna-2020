@@ -31,3 +31,17 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+
+# Portées depuis ratna : polyfill jQuery 4 + lightbox œuvre (prev/next AJAX)
+jquery_compat:
+  js:
+    js/jquery-compat.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+
+oeuvre_modal:
+  js:
+    js/oeuvre-modal.js: {}
+  dependencies:
+    - core/jquery

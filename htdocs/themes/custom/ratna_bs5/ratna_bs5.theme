@@ -32,3 +32,16 @@ function ratna_bs5_form_system_theme_settings_alter(&$form, FormStateInterface $
     'bg-transparent' => t('Transparent'),
   ];
 }
+
+/**
+ * Implements hook_library_info_alter().
+ *
+ * Drupal 11 = jQuery 4 (sans $.isFunction/$.isArray/$.trim/$.type). colorbox
+ * et superfish les utilisent encore → on force le polyfill ratna_bs5/jquery_compat
+ * à se charger avant eux. (Porté de ratna.)
+ */
+function ratna_bs5_library_info_alter(array &$libraries, $extension) {
+  if ($extension === 'colorbox' && isset($libraries['colorbox'])) {
+    $libraries['colorbox']['dependencies'][] = 'ratna_bs5/jquery_compat';
+  }
+}
