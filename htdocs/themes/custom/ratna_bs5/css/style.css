@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #000 !important;
   color: #fff;
@@ -134,4 +135,369 @@ ul.sf-menu.sf-style-default li:hover,
 ul.sf-menu.sf-style-default a:hover {
   background: #000 !important;
   color: #fff !important;
+}
+
+.block-field-blocknodepagebody, .block-field-blocknodepagefield-body-2 {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 100;
+}
+@media (min-width: 768px) {
+  .block-field-blocknodepagebody, .block-field-blocknodepagefield-body-2 {
+    margin-left: 30px;
+  }
+}
+
+.block-field-blocknodepagefield-body-2 {
+  border-top: 1px solid #fff;
+  margin-top: 25px;
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .actualite .layout__region--second {
+    padding-left: 30px;
+  }
+}
+
+.view-actualites .row {
+  margin-bottom: 30px;
+}
+
+.view-actualites h3 {
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.block-field-blocknodeactualitetitle, .block-field-blocknodeactualitefield-sous-titre {
+  font-size: 20px;
+  font-weight: 600;
+}
+.block-field-blocknodeactualitetitle a, .block-field-blocknodeactualitetitle a:visited, .block-field-blocknodeactualitefield-sous-titre a, .block-field-blocknodeactualitefield-sous-titre a:visited {
+  color: #fff;
+}
+
+.block-field-blocknodeactualitefield-date {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.block-field-blocknodeactualitebody {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.actualite .block-field-blocknodeactualitetitle, .actualite .block-field-blocknodeactualitefield-sous-titre {
+  font-size: 22px;
+}
+@media (min-width: 768px) {
+  .actualite .block-field-blocknodeactualitetitle, .actualite .block-field-blocknodeactualitefield-sous-titre {
+    font-size: 27px;
+  }
+}
+
+.actualite .block-field-blocknodeactualitefield-date {
+  font-size: 21px;
+}
+
+.actualite .block-field-blocknodeactualitebody {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.view .views-view-grid .row > [class*=col-] {
+  margin-bottom: 25px;
+}
+
+.view .views-view-grid .row > [class*=col-] a {
+  display: block;
+}
+.view .views-view-grid .row > [class*=col-] img {
+  width: 100%;
+  height: auto;
+}
+
+.view-taxonomy-term .view-header h2 {
+  position: absolute;
+  z-index: 100;
+  top: -148px;
+  left: 130px;
+  font-size: 24px;
+  font-weight: 100;
+}
+@media (min-width: 768px) {
+  .view-taxonomy-term .view-header h2 {
+    top: -110px;
+    left: 150px;
+    font-size: 24px;
+    font-weight: 100;
+  }
+}
+@media (min-width: 1024px) {
+  .view-taxonomy-term .view-header h2 {
+    top: -66px;
+    left: 240px;
+    font-size: 24px;
+    font-weight: 100;
+  }
+}
+
+.view-taxonomy-term .view-header h2 a {
+  color: #888;
+  text-decoration: none;
+}
+
+#cboxContent, .cboxPhoto {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.block-field-blocknodeoeuvrefield-image-oeuvre img {
+  max-height: 800px;
+  margin: auto;
+  width: auto;
+}
+
+.oeuvre .layout__region {
+  text-align: center;
+}
+
+.oeuvre a, a:hover, a:focus {
+  text-decoration: none;
+}
+
+.block-field-blocknodeoeuvretitle {
+  font-size: 20px;
+  color: #b5b5b5;
+}
+
+.block-field-blocknodeoeuvrefield-technique, .block-field-blocknodeoeuvrefield-taille {
+  display: inline-block;
+}
+
+.block-field-blocknodeoeuvrefield-technique, .block-field-blocknodeoeuvrefield-taille, .block-field-blocknodeoeuvrefield-annee {
+  font-size: 16px;
+  font-weight: 100;
+  color: #707070;
+}
+
+.actualite.accuiel .layout--twocol-section {
+  display: block;
+  flex-wrap: nowrap;
+}
+.actualite.accuiel .layout__region--first {
+  flex: none;
+  width: 158px;
+  float: left;
+  border: 20px solid #000;
+  margin-left: -20px;
+}
+@media (min-width: 768px) {
+  .actualite.accuiel .layout__region--first {
+    width: 218px;
+  }
+}
+.actualite.accuiel .layout__region--second {
+  flex: none;
+  padding-left: 0px;
+  width: 70%;
+  position: absolute;
+  left: 138px;
+}
+@media (min-width: 768px) {
+  .actualite.accuiel .layout__region--second {
+    left: 198px;
+    padding-top: 108px;
+  }
+}
+@media (min-width: 1024px) {
+  .actualite.accuiel .layout__region--second {
+    padding-top: 100px;
+  }
+}
+.actualite.accuiel .block-field-blocknodeactualitetitle {
+  float: left;
+}
+.actualite.accuiel .block-field-blocknodeactualitefield-sous-titre:before {
+  content: "  -  ";
+  float: left;
+}
+
+.view-accueil {
+  margin-top: -19px;
+}
+@media (min-width: 768px) {
+  .view-accueil {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 1024px) {
+  .view-accueil {
+    margin-top: -25px;
+  }
+}
+.view-accueil .attachment-before {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  bottom: -210px;
+}
+@media (min-width: 768px) {
+  .view-accueil .attachment-before {
+    bottom: 0;
+    margin-bottom: -190px;
+  }
+}
+@media (min-width: 1024px) {
+  .view-accueil .attachment-before {
+    bottom: 0;
+    margin-bottom: -200px;
+  }
+}
+
+a:focus:not(:focus-visible),
+.use-ajax:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+html {
+  overflow-y: scroll !important;
+}
+
+a.use-ajax[data-dialog-type] .ajax-throbber {
+  display: none !important;
+}
+
+.ui-dialog.oeuvre-modal {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  margin: 0 !important;
+  width: auto !important;
+  max-width: 90vw !important;
+  background: #1b1b1b !important;
+  border: 0 !important;
+  padding: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar {
+  position: static;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  height: 0;
+}
+.ui-dialog.oeuvre-modal .ui-dialog-title {
+  display: none;
+}
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close {
+  position: absolute !important;
+  top: 0 !important;
+  right: -20px !important;
+  margin: 0 !important;
+  z-index: 1000;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: #444 !important;
+  border: 0 !important;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none !important;
+}
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close:hover {
+  background: #555 !important;
+}
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close:focus {
+  outline: none !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close::before {
+  content: "×";
+  display: block;
+  font-size: 30px;
+  line-height: 31px;
+  text-align: center;
+  color: #222;
+}
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-icon {
+  display: none;
+}
+.ui-dialog.oeuvre-modal .ui-dialog-content {
+  background: #1b1b1b !important;
+  color: #fff;
+  padding: 18px;
+  width: auto !important;
+  height: auto !important;
+  max-height: 88vh !important;
+  overflow-y: auto;
+  transition: opacity 0.2s ease;
+  outline: none !important;
+}
+.ui-dialog.oeuvre-modal:focus,
+.ui-dialog.oeuvre-modal .ui-dialog-content:focus,
+.ui-dialog.oeuvre-modal article:focus,
+.ui-dialog.oeuvre-modal [tabindex]:focus {
+  outline: none !important;
+}
+.ui-dialog.oeuvre-modal .contextual-region,
+.ui-dialog.oeuvre-modal .contextual-region:focus,
+.ui-dialog.oeuvre-modal .contextual-region:focus-within,
+.ui-dialog.oeuvre-modal .contextual-region:hover {
+  outline: none !important;
+}
+.ui-dialog.oeuvre-modal img {
+  max-width: 100%;
+  max-height: 78vh;
+  width: auto;
+  height: auto;
+}
+
+.ui-dialog.oeuvre-modal .oeuvre-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 1000;
+}
+.ui-dialog.oeuvre-modal .oeuvre-nav:hover {
+  opacity: 1;
+}
+
+.ui-dialog.oeuvre-modal .oeuvre-nav--prev {
+  left: -56px;
+}
+
+.ui-dialog.oeuvre-modal .oeuvre-nav--next {
+  right: -56px;
+}
+
+.ui-widget-overlay.ui-front {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: 0.96;
+  cursor: pointer;
 }

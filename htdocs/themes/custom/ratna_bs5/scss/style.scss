@@ -141,3 +141,397 @@ ul.sf-menu.sf-style-default a:hover {
   background: #000 !important;
   color: #fff !important;
 }
+
+// ###########################################################################
+// Porté depuis le thème ratna (BS3) — contenu/vues/œuvre/accueil/modale.
+// Ces classes (Layout Builder .block-field-blocknode*, .layout__region,
+// vues, jQuery UI .ui-dialog) sont INDÉPENDANTES du framework → s'appliquent
+// telles quelles sur le DOM BS5/Barrio.
+// ###########################################################################
+
+.block-field-blocknodepagebody, .block-field-blocknodepagefield-body-2 {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 100;
+  @media (min-width: 768px) {
+    margin-left: 30px;
+  }
+}
+
+.block-field-blocknodepagefield-body-2 {
+  border-top: 1px solid #fff;
+  margin-top: 25px;
+  padding-top: 10px;
+}
+
+
+
+.actualite .layout__region--second {
+  @media (min-width: 768px) {
+    padding-left: 30px;
+  }
+}
+
+.view-actualites .row {
+  margin-bottom: 30px;
+}
+
+.view-actualites h3 {
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.block-field-blocknodeactualitetitle, .block-field-blocknodeactualitefield-sous-titre {
+  font-size: 20px;
+  font-weight: 600;
+  a, a:visited {
+    color: #fff;
+  }
+}
+
+.block-field-blocknodeactualitefield-date {
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.block-field-blocknodeactualitebody {
+  text-align: justify;
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.actualite .block-field-blocknodeactualitetitle, .actualite .block-field-blocknodeactualitefield-sous-titre {
+  font-size: 22px;
+  
+  @media (min-width: 768px) {
+    font-size: 27px;
+  }
+}
+
+.actualite .block-field-blocknodeactualitefield-date {
+  font-size: 21px;
+}
+
+.actualite .block-field-blocknodeactualitebody {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+// views_bootstrap 4.x : les colonnes .col sont devenues .col-* (responsive).
+// Espace vertical entre les rangées des grilles d'images (galerie, actualités, termes).
+.view .views-view-grid .row > [class*="col-"] {
+  margin-bottom: 25px; // = gutter horizontal ($grid-gutter-width)
+}
+
+// Les vignettes remplissent la largeur de leur colonne → l'écart horizontal
+// entre images = le gutter (25px) = l'écart vertical. Espacements identiques.
+// Le lien use-ajax (inline) se rétrécit à l'image : on le passe en block.
+.view .views-view-grid .row > [class*="col-"] {
+  a { display: block; }
+  img { width: 100%; height: auto; }
+}
+
+.view-taxonomy-term .view-header h2 {
+    position: absolute;
+    z-index: 100;
+    top: -148px;
+    left: 130px;
+    font-size: 24px;
+    font-weight: 100;
+    
+    @media (min-width: 768px) {
+      top: -110px;
+      left: 150px;
+      font-size: 24px;
+      font-weight: 100;
+    }
+    
+    @media (min-width: 1024px) {
+      top: -66px;
+      left: 240px;
+      font-size: 24px;
+      font-weight: 100;
+    }
+}
+.view-taxonomy-term .view-header h2 a{
+    color: #888;
+    text-decoration: none;
+}
+
+// (espacement + largeur des vignettes gérés par la règle
+// .view .views-view-grid .row > [class*="col-"] ci-dessus)
+
+#cboxContent, .cboxPhoto {
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+}
+
+.block-field-blocknodeoeuvrefield-image-oeuvre img {
+  max-height: 800px;
+  margin: auto;
+  width: auto;
+}
+
+.oeuvre .layout__region {
+  text-align: center;
+}
+
+.oeuvre a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+.block-field-blocknodeoeuvretitle {
+  font-size: 20px;
+  color: #b5b5b5;
+}
+
+.block-field-blocknodeoeuvrefield-technique, .block-field-blocknodeoeuvrefield-taille {
+  display: inline-block;
+}
+
+.block-field-blocknodeoeuvrefield-technique, .block-field-blocknodeoeuvrefield-taille, .block-field-blocknodeoeuvrefield-annee {
+  font-size: 16px;
+  font-weight: 100;
+  color: #707070;
+}
+
+
+.actualite.accuiel {
+  .layout--twocol-section {
+    display: block;
+    flex-wrap: nowrap;
+}
+  
+  .layout__region--first {
+    flex: none;
+    width: 158px;
+    float: left;
+    border: 20px solid #000;
+    margin-left: -20px;
+    
+    @media (min-width: 768px) {
+      width: 218px;
+    }
+
+  }
+  .layout__region--second {
+    flex: none;
+    padding-left: 0px;
+    width: 70%;
+    position: absolute;
+    left: 138px;
+    
+    @media (min-width: 768px) {
+      left: 198px;
+      padding-top: 108px;
+    }
+    
+    @media (min-width: 1024px) {
+      padding-top: 100px;
+    }
+  }
+  
+  .block-field-blocknodeactualitetitle {
+    float: left;
+  }
+  
+  .block-field-blocknodeactualitefield-sous-titre:before {
+    content: "  -  ";
+    float: left;
+  }
+  
+}
+
+
+
+.view-accueil {
+  margin-top: -19px;
+  
+  @media (min-width: 768px) {
+    margin-top: -20px;
+  }
+  
+  @media (min-width: 1024px) {
+    margin-top: -25px;
+  }
+  
+  .attachment-before {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    bottom: -210px;
+
+    @media (min-width: 768px) {
+      bottom: 0;
+      margin-bottom: -190px;
+    }
+    
+    @media (min-width: 1024px) {
+      bottom: 0;
+      margin-bottom: -200px;
+    }    
+  }
+}
+
+// ============================================================
+// Œuvres en modale (galerie) — habillage de la modale Drupal
+// ============================================================
+
+// 1. Pas de contour de focus au clic souris (conservé au clavier via :focus-visible)
+a:focus:not(:focus-visible),
+.use-ajax:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+}
+
+// Empêche le "saut" de page à l'ouverture de la modale.
+// À l'ouverture, le pont modal Bootstrap met <html> en overflow:hidden (inline)
+// et bascule le scroll sur <body> : la barre de défilement de la fenêtre
+// disparaît (décalage horizontal des vignettes) et le scroll repart en haut
+// (la page saute). On FORCE <html> à garder sa barre (overflow-y:scroll
+// !important écrase le style inline) → pas de bascule, pas de saut.
+html {
+  overflow-y: scroll !important;
+}
+
+// 4. Le thème Bootstrap insère un <span class="ajax-throbber glyphicon-spin">
+// dans le lien au clic → agrandit la colonne et décale la grille. On le masque
+// sur les liens de modale (ouverture instantanée, aucun indicateur utile).
+a.use-ajax[data-dialog-type] .ajax-throbber {
+  display: none !important;
+}
+
+// Modale œuvre — centrage forcé, thème sombre.
+// Pas de flex : on laisse jQuery UI gérer son layout interne (titlebar + content).
+.ui-dialog.oeuvre-modal {
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  margin: 0 !important;
+  width: auto !important;
+  max-width: 90vw !important;
+  background: #1b1b1b !important;
+  border: 0 !important;
+  padding: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .6);
+
+  // Barre de titre : sortie du flux, on garde juste le bouton ×.
+  .ui-dialog-titlebar {
+    position: static;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    height: 0;
+  }
+
+  .ui-dialog-title { display: none; }
+
+  // Croix : pastille blanche bien visible. Le × est dessiné en CSS (::before)
+  // car le bouton jQuery UI est vide (icône via background, écrasée ici).
+  .ui-dialog-titlebar-close {
+    position: absolute !important;
+    top: 0 !important;
+    right: -20px !important;
+    margin: 0 !important;
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: #444 !important;
+    border: 0 !important;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4);
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none !important;
+
+    &:hover { background: #555 !important; }
+    &:focus { outline: none !important; box-shadow: 0 2px 8px rgba(0, 0, 0, .4) !important; }
+
+    &::before {
+      content: "\00d7"; // ×
+      display: block;
+      font-size: 30px;
+      line-height: 31px;
+      text-align: center;
+      color: #222;
+    }
+
+    .ui-icon { display: none; }
+  }
+
+  // Contenu : fond sombre, défile si l'œuvre dépasse la hauteur.
+  .ui-dialog-content {
+    background: #1b1b1b !important;
+    color: #fff;
+    padding: 18px;
+    width: auto !important;
+    height: auto !important;
+    max-height: 88vh !important;
+    overflow-y: auto;
+    transition: opacity .2s ease;
+    outline: none !important;
+  }
+
+  // Pas de contour de focus sur la modale / son contenu (Drupal y met le focus).
+  &:focus,
+  .ui-dialog-content:focus,
+  article:focus,
+  [tabindex]:focus { outline: none !important; }
+
+  // Pas de contour pointillé sur la région contextuelle (apparaît après la
+  // navigation AJAX) — on garde le crayon, on enlève juste le surlignage.
+  .contextual-region,
+  .contextual-region:focus,
+  .contextual-region:focus-within,
+  .contextual-region:hover { outline: none !important; }
+
+  // L'image est bornée par la hauteur ; sa largeur (auto) détermine la largeur
+  // de la modale, qui épouse ainsi l'œuvre.
+  img {
+    max-width: 100%;
+    max-height: 78vh;
+    width: auto;
+    height: auto;
+  }
+}
+
+// Flèches précédent / suivant (lightbox) sur les bords de la modale.
+.ui-dialog.oeuvre-modal .oeuvre-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 44px;
+  line-height: 1;
+  opacity: .5;
+  cursor: pointer;
+  z-index: 1000;
+
+  &:hover { opacity: 1; }
+}
+.ui-dialog.oeuvre-modal .oeuvre-nav--prev { left: -56px; }
+.ui-dialog.oeuvre-modal .oeuvre-nav--next { right: -56px; }
+
+// Fond noir opaque qui masque le site, et curseur "fermer" (clic = ferme).
+.ui-widget-overlay.ui-front {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: .96;
+  cursor: pointer;
+}
