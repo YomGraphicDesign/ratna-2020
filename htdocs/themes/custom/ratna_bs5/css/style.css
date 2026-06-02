@@ -798,3 +798,36 @@ a.use-ajax .ajax-progress {
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-icon {
   display: none !important;
 }
+
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close {
+  display: block !important;
+  overflow: visible !important;
+  text-align: center !important;
+  font-size: 0 !important;
+  line-height: 30px !important;
+}
+
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close::before {
+  content: "×" !important;
+  display: inline !important;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  font-size: 28px !important;
+  line-height: 30px !important;
+  color: #222 !important;
+  vertical-align: middle;
+}
+
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close {
+  background-color: #444 !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 6L18 18M18 6L6 18' stroke='%23222' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 15px 15px !important;
+  text-indent: 0 !important;
+  font-size: 0 !important;
+  overflow: hidden !important;
+}
+
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close::before {
+  content: none !important;
+}
