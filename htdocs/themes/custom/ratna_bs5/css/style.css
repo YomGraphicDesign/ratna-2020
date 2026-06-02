@@ -73,7 +73,7 @@ main,
 }
 
 #navbar-main {
-  max-width: 1170px;
+  max-width: 1224px;
   margin: 25px auto 0 !important;
   padding-left: 12px;
   padding-right: 12px;
@@ -99,7 +99,7 @@ main,
 }
 
 .main-container {
-  max-width: 1170px;
+  max-width: 1224px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -551,4 +551,23 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   background: #000;
   opacity: 0.96;
   cursor: pointer;
+}
+
+.dialog-off-canvas-main-canvas .container,
+.page-content .container,
+main.col {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view-accueil {
+  text-align: center;
+}
+
+.view-accueil img,
+.view-accueil .media,
+.view-accueil .slide__content {
+  margin-left: auto;
+  margin-right: auto;
 }

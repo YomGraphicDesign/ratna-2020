@@ -70,7 +70,7 @@ main,
 // le menu à droite. Le fond noir du body fait le reste (barre centrée).
 // =========================================================================
 #navbar-main {
-  max-width: 1170px;
+  max-width: 1224px;
   margin: 25px auto 0 !important;
   padding-left: 12px;
   padding-right: 12px;
@@ -88,7 +88,7 @@ main,
 
 // Contenu : centré dans le même gabarit que le header (au lieu de pleine largeur)
 .main-container {
-  max-width: 1170px;
+  max-width: 1224px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -575,3 +575,19 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
   opacity: .96;
   cursor: pointer;
 }
+
+// =========================================================================
+// Largeur du contenu alignée sur prod (~1200) au lieu du conteneur BS5 (1320),
+// et image d'accueil centrée comme en BS3.
+// =========================================================================
+.dialog-off-canvas-main-canvas .container,
+.page-content .container,
+main.col {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.view-accueil { text-align: center; }
+.view-accueil img,
+.view-accueil .media,
+.view-accueil .slide__content { margin-left: auto; margin-right: auto; }
