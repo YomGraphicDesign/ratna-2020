@@ -651,6 +651,11 @@ button, input, select, textarea,
 
 #superfish-main ul {
   background: #fff !important;
+}
+
+#superfish-main li li,
+#superfish-main.sf-navbar > li > ul {
+  background: #fff !important;
   border-bottom: 6px solid #000;
   border-left: 6px solid #000;
   border-right: 6px solid #000;
@@ -680,4 +685,27 @@ button, input, select, textarea,
   background: #000 !important;
   color: #fff !important;
   outline: 0 !important;
+}
+
+#superfish-main ul {
+  display: block !important;
+  width: auto !important;
+}
+
+#superfish-main li li {
+  display: block !important;
+  float: none !important;
+  width: auto !important;
+}
+
+#superfish-main li li a {
+  display: block !important;
+  width: auto !important;
+  white-space: nowrap !important;
+}
+
+#superfish-main li,
+#superfish-main a,
+#superfish-main span.nolink {
+  font-weight: 100 !important;
 }
