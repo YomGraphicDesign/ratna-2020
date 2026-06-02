@@ -462,8 +462,8 @@ a.use-ajax[data-dialog-type] .ajax-throbber {
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close {
   position: absolute !important;
-  top: 0 !important;
-  right: -20px !important;
+  top: -5px !important;
+  right: -35px !important;
   margin: 0 !important;
   z-index: 1000;
   width: 30px;
@@ -772,10 +772,29 @@ button, input, select, textarea,
 
 .path-taxonomy .site-name-slogan,
 .page-vocabulary-galerie .site-name-slogan {
-  display: none;
+  display: none !important;
 }
 
 #cboxLoadingOverlay,
 #cboxLoadingGraphic {
+  display: none !important;
+}
+
+.ajax-progress,
+.ajax-progress-throbber,
+.ajax-progress-fullscreen,
+.ajax-throbber,
+a.use-ajax .ajax-progress {
+  display: none !important;
+}
+
+.view-taxonomy-term .view-header h2 {
+  top: -43px !important;
+  left: 222px !important;
+}
+
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-button-icon,
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-button-icon-space,
+.ui-dialog.oeuvre-modal .ui-dialog-titlebar-close .ui-icon {
   display: none !important;
 }
