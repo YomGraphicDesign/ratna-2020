@@ -78,6 +78,7 @@
         "drupal/backup_migrate": "^5.0",
         "drupal/blazy": "^3.0",
         "drupal/bootstrap": "^3.40",
+        "drupal/bootstrap_barrio": "^5.5",
         "drupal/colorbox": "^2.0",
         "drupal/colorbox_inline": "^2.0",
         "drupal/colorbox_load": "^2.0",
@@ -154,7 +155,7 @@
             }
         },
         "platform": {
-            "php": "8.4.0"
+            "php": "8.4.1"
         }
     },
     "autoload": {
