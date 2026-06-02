@@ -49,9 +49,20 @@ main,
   @media (min-width: 768px)  { font-size: 60px; }
   @media (min-width: 1024px) { font-size: 90px; }
 }
-.site-slogan {
+// Slogan "artiste peintre" collé au logo, aligné sur la ligne de base, petit.
+.site-name-slogan {
+  color: #fff;
   font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  vertical-align: baseline;
+  margin-left: -2px;
+
+  @media (min-width: 768px)  { font-size: 22px; }
+  @media (min-width: 1024px) { font-size: 26px; }
 }
+// Le logo et le slogan sur la même ligne de base
+.navbar-brand { vertical-align: baseline; }
 
 // =========================================================================
 // Menus : superfish (desktop) + hamburger responsive_menu/mmenu (mobile)

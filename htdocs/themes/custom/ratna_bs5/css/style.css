@@ -49,8 +49,27 @@ main,
   }
 }
 
-.site-slogan {
+.site-name-slogan {
+  color: #fff;
   font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  vertical-align: baseline;
+  margin-left: -2px;
+}
+@media (min-width: 768px) {
+  .site-name-slogan {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1024px) {
+  .site-name-slogan {
+    font-size: 26px;
+  }
+}
+
+.navbar-brand {
+  vertical-align: baseline;
 }
 
 .navbar-toggler {
