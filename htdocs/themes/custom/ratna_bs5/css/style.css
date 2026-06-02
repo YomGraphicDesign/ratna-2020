@@ -629,9 +629,13 @@ button, input, select, textarea,
 #superfish-main li:hover > ul,
 #superfish-main li.sfHover > ul {
   top: 0 !important;
-  left: -12px !important;
+  left: -6px !important;
   margin-top: 30px !important;
-  padding-top: 6px !important;
+  padding-top: 0 !important;
+}
+
+#superfish-main ul {
+  border-top: 6px solid #000;
 }
 
 #superfish-main a {
@@ -708,4 +712,8 @@ button, input, select, textarea,
 #superfish-main a,
 #superfish-main span.nolink {
   font-weight: 100 !important;
+}
+
+#superfish-main li li {
+  margin: 0 !important;
 }

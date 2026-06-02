@@ -652,9 +652,13 @@ button, input, select, textarea,
 #superfish-main li:hover > ul,
 #superfish-main li.sfHover > ul {
   top: 0 !important;
-  left: -12px !important;
+  left: -6px !important;
   margin-top: 30px !important;
-  padding-top: 6px !important;
+  padding-top: 0 !important;
+}
+// Bordure haute du sous-menu
+#superfish-main ul {
+  border-top: 6px solid #000;
 }
 
 // Empêche le lien parent de s'enrouler/rétrécir au survol (sinon "Galerie" disparaît)
@@ -735,3 +739,6 @@ button, input, select, textarea,
 #superfish-main span.nolink {
   font-weight: 100 !important;
 }
+
+// Items de sous-menu : pas de marge (le 6px du menu principal ne s'y applique pas)
+#superfish-main li li { margin: 0 !important; }
