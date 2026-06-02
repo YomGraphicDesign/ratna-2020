@@ -647,12 +647,25 @@ button, input, select, textarea,
   margin-bottom: 12px;
 }
 
-// Sous-menu déroulant collé au bas du parent (calage BS5, écrase le BS3 porté)
-#superfish-main li ul,
+// Sous-menu déroulant : valeurs exactes de prod (gap 0), spécificité forcée.
+// (left:-12px compense le décalage, top:0 + margin-top = hauteur item pour coller.)
 #superfish-main li:hover > ul,
 #superfish-main li.sfHover > ul {
-  top: 100% !important;
-  left: 0 !important;
-  margin-top: 0 !important;
-  padding-top: 0 !important;
+  top: 0 !important;
+  left: -12px !important;
+  margin-top: 30px !important;
+  padding-top: 6px !important;
+}
+
+// Empêche le lien parent de s'enrouler/rétrécir au survol (sinon "Galerie" disparaît)
+#superfish-main a { white-space: nowrap; }
+#superfish-main > li { position: relative; }
+
+// Parent sans lien (ex. "Galerie" = span.nolink) : texte blanc au survol
+// (sinon noir sur fond noir du li survolé → "Galerie" disparaît)
+#superfish-main > li:hover > span,
+#superfish-main > li.sfHover > span,
+#superfish-main > li:hover > span.nolink,
+#superfish-main > li.sfHover > span.nolink {
+  color: #fff !important;
 }
