@@ -1,5 +1,5 @@
 body {
-  background-color: #000;
+  background-color: #000 !important;
   color: #fff;
 }
 
@@ -9,11 +9,25 @@ a:focus {
   color: #fff;
 }
 
+main,
+.main-content,
+.region-content,
+.region-highlighted,
+.dialog-off-canvas-main-canvas {
+  background-color: transparent !important;
+}
+
 .navbar,
 #navbar-main,
+#navbar-top,
+.navbar.bg-primary,
+.navbar[class*=bg-] {
+  background-color: #000 !important;
+  border: none !important;
+}
+
 #navbar-top {
-  background-color: #000;
-  border: none;
+  display: none;
 }
 
 .navbar-brand {
@@ -68,4 +82,56 @@ a:focus {
   #toggle-icon {
     display: none;
   }
+}
+.dialog-off-canvas-main-canvas,
+.main-container,
+.layout-container,
+.region,
+.region-content,
+.block,
+.row,
+main,
+.col,
+.well,
+.card,
+.views-element-container {
+  background-color: transparent !important;
+}
+
+ul.sf-menu.sf-style-default {
+  float: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+#superfish-main > li,
+ul.sf-menu.sf-style-default li {
+  background: #fff !important;
+  color: #000 !important;
+  margin: 0 0 0 6px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#superfish-main a,
+#superfish-main a:visited,
+ul.sf-menu.sf-style-default a,
+ul.sf-menu.sf-style-default a:visited,
+ul.sf-menu.sf-style-default span.nolink {
+  border: 0 !important;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #000 !important;
+}
+
+#superfish-main > li:hover,
+#superfish-main > li.sfHover,
+#superfish-main a:hover,
+#superfish-main a:focus,
+#superfish-main a.is-active,
+ul.sf-menu.sf-style-default li:hover,
+ul.sf-menu.sf-style-default a:hover {
+  background: #000 !important;
+  color: #fff !important;
 }

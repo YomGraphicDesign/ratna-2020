@@ -7,7 +7,7 @@ $ratna-bg: #000;
 
 // --- Base ---
 body {
-  background-color: $ratna-bg;
+  background-color: $ratna-bg !important;
   color: #fff;
 }
 a,
@@ -16,13 +16,27 @@ a:focus {
   color: #fff;
 }
 
-// --- Barres / navbar en noir ---
+// Zones de contenu : pas de fond blanc, on garde le noir du body
+main,
+.main-content,
+.region-content,
+.region-highlighted,
+.dialog-off-canvas-main-canvas {
+  background-color: transparent !important;
+}
+
+// --- Barres / navbar en noir (on bat les classes utilitaires Barrio bg-*) ---
 .navbar,
 #navbar-main,
-#navbar-top {
-  background-color: $ratna-bg;
-  border: none;
+#navbar-top,
+.navbar.bg-primary,
+.navbar[class*="bg-"] {
+  background-color: $ratna-bg !important;
+  border: none !important;
 }
+
+// Barre du haut (compte/recherche) désormais vide → masquée
+#navbar-top { display: none; }
 
 // --- Logo "Ratna artiste peintre" ---
 .navbar-brand {
@@ -70,4 +84,60 @@ a:focus {
 @media (min-width: 992px) {
   .responsive-menu-toggle,
   #toggle-icon { display: none; }
+}
+
+// =========================================================================
+// Conteneurs : tout en noir (élimine la bande blanche autour du contenu)
+// =========================================================================
+.dialog-off-canvas-main-canvas,
+.main-container,
+.layout-container,
+.region,
+.region-content,
+.block,
+.row,
+main,
+.col,
+.well,
+.card,
+.views-element-container {
+  background-color: transparent !important;
+}
+
+// =========================================================================
+// Menu Superfish : boutons blancs, texte noir, survol inversé (look ratna)
+// =========================================================================
+ul.sf-menu.sf-style-default {
+  float: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+#superfish-main > li,
+ul.sf-menu.sf-style-default li {
+  background: #fff !important;
+  color: #000 !important;
+  margin: 0 0 0 6px;
+  font-size: 18px;
+  font-weight: 300;
+}
+#superfish-main a,
+#superfish-main a:visited,
+ul.sf-menu.sf-style-default a,
+ul.sf-menu.sf-style-default a:visited,
+ul.sf-menu.sf-style-default span.nolink {
+  border: 0 !important;
+  padding: 6px 12px;
+  text-decoration: none;
+  color: #000 !important;
+}
+#superfish-main > li:hover,
+#superfish-main > li.sfHover,
+#superfish-main a:hover,
+#superfish-main a:focus,
+#superfish-main a.is-active,
+ul.sf-menu.sf-style-default li:hover,
+ul.sf-menu.sf-style-default a:hover {
+  background: #000 !important;
+  color: #fff !important;
 }
