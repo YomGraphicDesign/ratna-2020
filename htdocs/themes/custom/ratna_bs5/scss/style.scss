@@ -742,3 +742,69 @@ button, input, select, textarea,
 
 // Items de sous-menu : pas de marge (le 6px du menu principal ne s'y applique pas)
 #superfish-main li li { margin: 0 !important; }
+
+// Champs entity-reference : pas de marge par défaut Barrio
+.field--type-entity-reference { margin: 0 0 0.5em; }
+
+// Actualités : titres sans soulignement
+.view-actualites a,
+.view-actualites h3 a,
+.block-field-blocknodeactualitetitle a,
+.block-field-blocknodeactualitefield-sous-titre a,
+.actualite .field--name-title a {
+  text-decoration: none !important;
+}
+
+// Corps d'actualité (liste) à 16px
+.block-field-blocknodeactualitebody { font-size: 16px; }
+
+// Page contact : pas de padding sur les colonnes du formulaire (scopé pour ne pas casser la galerie)
+.page-node-10 .row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Page contact : champs + bouton sans radius, fond blanc / texte noir
+.page-node-10 input[type="text"],
+.page-node-10 input[type="email"],
+.page-node-10 input[type="tel"],
+.page-node-10 input[type="url"],
+.page-node-10 textarea,
+.page-node-10 select,
+.page-node-10 .form-control,
+.page-node-10 button,
+.page-node-10 .button,
+.page-node-10 input[type="submit"] {
+  border-radius: 0 !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+// Page contact : bouton sans bordure
+.page-node-10 button,
+.page-node-10 .button,
+.page-node-10 input[type="submit"] {
+  border: 0 !important;
+}
+
+// Page portrait : pas de padding sur les colonnes
+.page-node-11 .row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Page galerie (terme) : retire le padding du conteneur principal (pas de la grille)
+.page-vocabulary-galerie main.col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Slogan "artiste peintre" masqué sur les pages galerie (terme), comme ratna
+.path-taxonomy .site-name-slogan,
+.page-vocabulary-galerie .site-name-slogan {
+  display: none;
+}
+
+// Colorbox : masquer l'indicateur de chargement (throbber)
+#cboxLoadingOverlay,
+#cboxLoadingGraphic { display: none !important; }
