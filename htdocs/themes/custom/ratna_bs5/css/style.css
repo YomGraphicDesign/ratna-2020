@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://use.typekit.net/czc1rex.css");
 html,
 body,
 .mm-page,
@@ -60,19 +61,22 @@ main,
 .site-name-slogan {
   color: #fff;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
-  vertical-align: baseline;
+  align-self: flex-end;
   margin-left: -2px;
+  margin-bottom: 14px;
 }
 @media (min-width: 768px) {
   .site-name-slogan {
-    font-size: 22px;
+    font-size: 26px;
+    margin-bottom: 16px;
   }
 }
 @media (min-width: 1024px) {
   .site-name-slogan {
-    font-size: 26px;
+    font-size: 30px;
+    margin-bottom: 22px;
   }
 }
 
@@ -81,10 +85,10 @@ main,
 }
 
 #navbar-main {
-  max-width: 1224px;
+  max-width: 1200px;
   margin: 25px auto 0 !important;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 0;
+  padding-right: 0;
   flex-wrap: nowrap;
 }
 
@@ -107,7 +111,7 @@ main,
 }
 
 .main-container {
-  max-width: 1224px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -582,4 +586,20 @@ main.col {
 
 .view-taxonomy-term {
   position: relative;
+}
+
+.slick--view--accueil,
+.view-accueil .slick {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+body,
+.navbar-brand,
+.site-name-slogan,
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea,
+.sf-menu a,
+.view-header h2 {
+  font-family: "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }

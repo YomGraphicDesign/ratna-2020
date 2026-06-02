@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/czc1rex.css");
 // =========================================================================
 // Ratna BS5 — identité visuelle portée depuis le thème ratna (Bootstrap 3)
 // Compilé vers css/style.css (chargé par la lib global-styling).
@@ -57,16 +58,18 @@ main,
   @media (min-width: 1024px) { font-size: 90px; }
 }
 // Slogan "artiste peintre" collé au logo, aligné sur la ligne de base, petit.
+// Barrio pose .align-top (vertical-align:top !important) → on le bat avec baseline.
 .site-name-slogan {
   color: #fff;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 1;
-  vertical-align: baseline;
+  align-self: flex-end;       // calé en bas du navbar (sur la base de "Ratna")
   margin-left: -2px;
+  margin-bottom: 14px;        // remonte sur la ligne de base des lettres
 
-  @media (min-width: 768px)  { font-size: 22px; }
-  @media (min-width: 1024px) { font-size: 26px; }
+  @media (min-width: 768px)  { font-size: 26px; margin-bottom: 16px; }
+  @media (min-width: 1024px) { font-size: 30px; margin-bottom: 22px; }
 }
 // Le logo et le slogan sur la même ligne de base
 .navbar-brand { vertical-align: baseline; }
@@ -77,10 +80,10 @@ main,
 // le menu à droite. Le fond noir du body fait le reste (barre centrée).
 // =========================================================================
 #navbar-main {
-  max-width: 1224px;
+  max-width: 1200px;
   margin: 25px auto 0 !important;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 0;
+  padding-right: 0;
   flex-wrap: nowrap;
 }
 // Logo : léger recalage gauche comme en BS3
@@ -95,7 +98,7 @@ main,
 
 // Contenu : centré dans le même gabarit que le header (au lieu de pleine largeur)
 .main-container {
-  max-width: 1224px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -602,3 +605,24 @@ main.col {
 // Le titre de catégorie (h2 absolu) doit se positionner par rapport au
 // conteneur de la vue (centré), pas au full-width → on le rend relatif.
 .view-taxonomy-term { position: relative; }
+
+// Slider d'accueil : pas de padding horizontal (image pleine largeur du conteneur)
+.slick--view--accueil,
+.view-accueil .slick {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+// =========================================================================
+// Police : même pile que ratna ("Aller" en tête). Barrio impose sa police,
+// on la remplace partout.
+// =========================================================================
+body,
+.navbar-brand,
+.site-name-slogan,
+h1, h2, h3, h4, h5, h6,
+button, input, select, textarea,
+.sf-menu a,
+.view-header h2 {
+  font-family: "Aller", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
