@@ -72,6 +72,38 @@ main,
   vertical-align: baseline;
 }
 
+#navbar-main {
+  max-width: 1170px;
+  margin: 25px auto 0 !important;
+  padding-left: 12px;
+  padding-right: 12px;
+  flex-wrap: nowrap;
+}
+
+#navbar-main .navbar-brand {
+  margin-left: -6px;
+  padding: 0;
+}
+
+#navbar-main .navbar-collapse {
+  justify-content: flex-end;
+}
+
+#navbar-main .block-superfish {
+  margin-left: auto;
+}
+
+#superfish-main {
+  width: auto;
+  float: right;
+}
+
+.main-container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .navbar-toggler {
   display: none !important;
 }
