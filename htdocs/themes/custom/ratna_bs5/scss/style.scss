@@ -55,8 +55,13 @@ main,
   padding: 0;
 
   @media (min-width: 768px)  { font-size: 60px; }
-  @media (min-width: 1024px) { font-size: 90px; }
+  @media (min-width: 992px) { font-size: 90px; }
 }
+
+.navbar-brand:focus, .navbar-brand:hover {
+    color: #fff;
+}
+
 // Slogan "artiste peintre" collé au logo, aligné sur la ligne de base, petit.
 // Barrio pose .align-top (vertical-align:top !important) → on le bat avec baseline.
 .site-name-slogan {
@@ -69,7 +74,7 @@ main,
   margin-bottom: 14px;        // remonte sur la ligne de base des lettres
 
   @media (min-width: 768px)  { font-size: 26px; margin-bottom: 16px; }
-  @media (min-width: 1024px) { font-size: 30px; margin-bottom: 22px; }
+  @media (min-width: 992px) { font-size: 30px; margin-bottom: 22px; }
 }
 // Le logo et le slogan sur la même ligne de base
 .navbar-brand { vertical-align: baseline; }
@@ -82,6 +87,7 @@ main,
 #navbar-main {
   max-width: 1200px;
   margin: 25px auto 0 !important;
+  position: relative;
   padding-left: 0;
   padding-right: 0;
   flex-wrap: nowrap;
@@ -255,7 +261,7 @@ ul.sf-menu.sf-style-default a:hover {
 
 .actualite .block-field-blocknodeactualitetitle, .actualite .block-field-blocknodeactualitefield-sous-titre {
   font-size: 22px;
-  
+
   @media (min-width: 768px) {
     font-size: 27px;
   }
@@ -291,15 +297,15 @@ ul.sf-menu.sf-style-default a:hover {
     left: 130px;
     font-size: 24px;
     font-weight: 100;
-    
+
     @media (min-width: 768px) {
       top: -110px;
       left: 150px;
       font-size: 24px;
       font-weight: 100;
     }
-    
-    @media (min-width: 1024px) {
+
+    @media (min-width: 992px) {
       top: -40px;
       left: 216px;
       font-size: 24px;
@@ -355,14 +361,14 @@ border-radius: 0px;
     display: block;
     flex-wrap: nowrap;
 }
-  
+
   .layout__region--first {
     flex: none;
     width: 158px;
     float: left;
     border: 20px solid #000;
     margin-left: -20px;
-    
+
     @media (min-width: 768px) {
       width: 218px;
     }
@@ -374,41 +380,41 @@ border-radius: 0px;
     width: 70%;
     position: absolute;
     left: 138px;
-    
+
     @media (min-width: 768px) {
       left: 198px;
       padding-top: 108px;
     }
-    
-    @media (min-width: 1024px) {
+
+    @media (min-width: 992px) {
       padding-top: 100px;
     }
   }
-  
+
   .block-field-blocknodeactualitetitle {
     float: left;
   }
-  
+
   .block-field-blocknodeactualitefield-sous-titre:before {
     content: "  -  ";
     float: left;
   }
-  
+
 }
 
 
 
 .view-accueil {
   margin-top: -19px;
-  
+
   @media (min-width: 768px) {
     margin-top: -20px;
   }
-  
-  @media (min-width: 1024px) {
+
+  @media (min-width: 992px) {
     margin-top: -25px;
   }
-  
+
   .attachment-before {
     position: absolute;
     z-index: 100;
@@ -419,11 +425,11 @@ border-radius: 0px;
       bottom: 0;
       margin-bottom: -190px;
     }
-    
-    @media (min-width: 1024px) {
+
+    @media (min-width: 992px) {
       bottom: 0;
       margin-bottom: -200px;
-    }    
+    }
   }
 }
 
@@ -739,6 +745,9 @@ button, input, select, textarea,
 #superfish-main span.nolink {
   font-weight: 100 !important;
 }
+#superfish-main span.nolink {
+  padding: 6px 12px;
+}
 
 // Items de sous-menu : pas de marge (le 6px du menu principal ne s'y applique pas)
 #superfish-main li li { margin: 0 !important; }
@@ -931,7 +940,7 @@ a.use-ajax .ajax-progress { display: none !important; }
 // Hamburger : forcé visible sous 992px (écrase tout CSS résiduel de responsive_menu)
 @media (max-width: 991.98px) {
   .responsive-menu-toggle,
-  #toggle-icon { display: inline-block !important; }
+  #toggle-icon { display: block !important; }
 }
 
 // Barres de l'icône hamburger alignées à droite
@@ -948,5 +957,85 @@ a.use-ajax .ajax-progress { display: none !important; }
     flex: 0 0 50% !important;
     max-width: 50% !important;
     width: 50% !important;
+  }
+}
+
+// Sous 576px : 10px de marge latérale sur tout le site (header + contenu)
+@media (max-width: 575.98px) {
+  #navbar-main,
+  main.col,
+  .dialog-off-canvas-main-canvas .container,
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+// Sous 576px : header aligné sur les 15px (logo + hamburger respectent la marge)
+@media (max-width: 575.98px) {
+  #navbar-main .navbar-brand { margin-left: -3px !important; }
+  .responsive-menu-toggle { right: 15px !important; }
+}
+
+// Sous 576px (xs) : titre de catégorie galerie
+@media (max-width: 575.98px) {
+  .view-taxonomy-term .view-header h2 {
+    top: -37px !important;
+    left: 126px !important;
+  }
+}
+
+// Navbar : alignement du contenu au départ (global)
+.navbar {
+  justify-content: flex-start;
+}
+
+// Sous 576px : slogan
+@media (max-width: 575.98px) {
+  .site-name-slogan { margin-bottom: 3px; }
+}
+
+// Palier 576–767 : slogan
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .site-name-slogan { margin-bottom: 3px; }
+}
+
+// Palier 768–991 : slogan
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .site-name-slogan { margin-bottom: 3px; }
+}
+
+// Hamburger : pas d'étirement vertical → icône calée en bas (sur la ligne de base du logo)
+.responsive-menu-toggle {
+  top: auto !important;
+  bottom: 6px !important;
+  height: auto !important;
+}
+
+.responsive-menu-toggle-icon {
+  height: 32px;
+}
+
+// Palier md (768–991, 1er palier avec hamburger) : diaporama d'accueil
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .view-accueil { margin-top: -10px; }
+}
+
+// Palier sm (576–767) : diaporama d'accueil
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .view-accueil { margin-top: -10px; }
+}
+
+// Palier sm (576–767) : recalage logo
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #navbar-main .navbar-brand { margin-left: -4px; }
+}
+
+// Palier xs (< 576px) : ligne du diaporama d'accueil
+@media (max-width: 575.98px) {
+  .view-accueil .row {
+    margin-top: 4px;
+    margin-right: -3px;
+    margin-left: -3px;
   }
 }
