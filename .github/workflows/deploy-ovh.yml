@@ -48,7 +48,6 @@ jobs:
             **/archives/**
             **/archives.zip
             **/dom-snapshots/**
-            **/htdocs/sites/*/files/**
             **/htdocs/sites/*/settings.php
             **/htdocs/sites/*/settings.local.php
             **/old 2020/**
