@@ -192,6 +192,11 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "htdocs/"
+            },
+            "file-mapping": {
+                "[web-root]/.htaccess": {
+                    "append": "assets/htaccess-append.txt"
+                }
             }
         },
         "installer-paths": {

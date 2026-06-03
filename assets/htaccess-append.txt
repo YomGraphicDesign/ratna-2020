@@ -1,0 +1,9 @@
+
+# ---------------------------------------------------------------------------
+# OVH mutualisé + HTTP/2 : OVH recompresse la réponse sans recalculer le
+# Content-Length → ERR_HTTP2_PROTOCOL_ERROR sur les agrégats CSS/JS (gzip).
+# On retire le Content-Length pour qu'OVH le recalcule. (ajout scaffold)
+# ---------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header always unset Content-Length
+</IfModule>
