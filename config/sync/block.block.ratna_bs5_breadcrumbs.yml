@@ -1,0 +1,22 @@
+uuid: a6faf58e-2a7d-4787-a64f-8eafddf5a283
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: IaVLCNVUEd2V-gfGmjwEoDFEQSN7vWC6id44LiV5nzY
+id: ratna_bs5_breadcrumbs
+theme: ratna_bs5
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -137,4 +137,6 @@ theme:
   ratna: 0
   claro: 0
   gin: 0
+  bootstrap_barrio: 0
+  ratna_bs5: 0
 profile: standard

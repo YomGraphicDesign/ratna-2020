@@ -822,7 +822,7 @@ a.use-ajax .ajax-progress {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 6L18 18M18 6L6 18' stroke='%23222' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  background-size: 15px 15px !important;
+  background-size: 20px 20px !important;
   text-indent: 0 !important;
   font-size: 0 !important;
   overflow: hidden !important;
@@ -830,4 +830,49 @@ a.use-ajax .ajax-progress {
 
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close::before {
   content: none !important;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-sm, .container-md, .container-lg, .container-xl, .container-xxl,
+  .dialog-off-canvas-main-canvas .container,
+  main.col,
+  #navbar-main {
+    max-width: 1200px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #navbar-main,
+  .container,
+  .container-lg, .container-xl, .container-xxl,
+  .dialog-off-canvas-main-canvas .container,
+  main.col {
+    max-width: 960px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #navbar-main,
+  .container,
+  .container-sm, .container-md, .container-lg, .container-xl, .container-xxl,
+  .dialog-off-canvas-main-canvas .container,
+  main.col {
+    max-width: 720px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #navbar-main .navbar-brand {
+    margin-left: -5px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .view-taxonomy-term .view-header h2 {
+    top: -38px !important;
+    left: 150px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .responsive-menu-toggle,
+  #toggle-icon {
+    display: inline-block !important;
+  }
 }

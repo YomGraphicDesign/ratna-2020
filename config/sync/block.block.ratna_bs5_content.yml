@@ -1,0 +1,22 @@
+uuid: 3016d956-d7a6-4328-859b-d33ffc8674cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: J5ZA1uQ90nFCfr3RMTkTAyUOOqI8eeWMouzyZWYIsNg
+id: ratna_bs5_content
+theme: ratna_bs5
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

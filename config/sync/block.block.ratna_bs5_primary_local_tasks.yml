@@ -1,0 +1,22 @@
+uuid: 7865a989-9b93-4ec9-a299-679237357846
+langcode: en
+status: true
+dependencies:
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: WDFwbEx2roECxhB1D0g_iuQlzDjN2vkvJnDxBUnASrY
+id: ratna_bs5_primary_local_tasks
+theme: ratna_bs5
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: d16a6cd4-51ca-4f20-affc-1533f2fc9a56
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: vSd7PEW7g2w4VmUKGuYpqmd3LhDJJMQsrPEhLc-RwDQ
+id: ratna_bs5_account_menu
+theme: ratna_bs5
+region: secondary_menu
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

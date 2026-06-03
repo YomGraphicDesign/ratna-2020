@@ -855,9 +855,61 @@ a.use-ajax .ajax-progress { display: none !important; }
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 6L18 18M18 6L6 18' stroke='%23222' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
-  background-size: 15px 15px !important;
+  background-size: 20px 20px !important;
   text-indent: 0 !important;
   font-size: 0 !important;
   overflow: hidden !important;
 }
 .ui-dialog.oeuvre-modal .ui-dialog-titlebar-close::before { content: none !important; }
+
+// Gabarit 1200 dès 1200px (au lieu du conteneur Bootstrap xxl=1320 à partir de 1400px)
+@media (min-width: 1200px) {
+  .container,
+  .container-sm, .container-md, .container-lg, .container-xl, .container-xxl,
+  .dialog-off-canvas-main-canvas .container,
+  main.col,
+  #navbar-main {
+    max-width: 1200px !important;
+  }
+}
+
+// Palier lg (992–1199px) : gabarit 960px (navbar + contenu alignés)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #navbar-main,
+  .container,
+  .container-lg, .container-xl, .container-xxl,
+  .dialog-off-canvas-main-canvas .container,
+  main.col {
+    max-width: 960px !important;
+  }
+}
+
+// Palier 576–991px : gabarit 720px
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #navbar-main,
+  .container,
+  .container-sm, .container-md, .container-lg, .container-xl, .container-xxl,
+  .dialog-off-canvas-main-canvas .container,
+  main.col {
+    max-width: 720px !important;
+  }
+}
+
+// Palier 576–991px : recalage du logo
+@media (min-width: 576px) and (max-width: 991.98px) {
+  #navbar-main .navbar-brand { margin-left: -5px; }
+}
+
+// Palier 576–991px : titre de catégorie galerie
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .view-taxonomy-term .view-header h2 {
+    top: -38px !important;
+    left: 150px !important;
+  }
+}
+
+// Hamburger : forcé visible sous 992px (écrase tout CSS résiduel de responsive_menu)
+@media (max-width: 991.98px) {
+  .responsive-menu-toggle,
+  #toggle-icon { display: inline-block !important; }
+}

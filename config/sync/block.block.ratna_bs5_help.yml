@@ -1,0 +1,22 @@
+uuid: 8edb6962-6cfc-4bdf-b32f-1192bcd6ee5f
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: wnzbfahHKtlQU1o3Fi9IB2Qzhjt6Ankd5EoSugSfqIg
+id: ratna_bs5_help
+theme: ratna_bs5
+region: highlighted
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

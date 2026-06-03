@@ -1,0 +1,23 @@
+uuid: f208fa17-eee5-4ac5-bfe9-ae2f7bafbe06
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: lvKGYt12gmBtatdbKFaXkU73GTEF6jbsWDCakWjoDRk
+id: ratna_bs5_search_form_wide
+theme: ratna_bs5
+region: top_header_form
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

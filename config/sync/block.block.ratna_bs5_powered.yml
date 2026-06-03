@@ -1,0 +1,22 @@
+uuid: b9ed5211-d4e3-472e-bcb4-828a7fe54e9f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: 3VxmkZYpZDw0G7JVIOW8HjoUPlvsPqDge9Eg5VGmTA8
+id: ratna_bs5_powered
+theme: ratna_bs5
+region: footer_fifth
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

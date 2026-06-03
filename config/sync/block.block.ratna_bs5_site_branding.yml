@@ -1,0 +1,25 @@
+uuid: 0e3b5c09-13cd-440a-9a8b-35f9f67fa7ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: ayN2quReto0mGzVZi0r72FJ9wsMZ5zV-oFHeVXKL04Y
+id: ratna_bs5_site_branding
+theme: ratna_bs5
+region: header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

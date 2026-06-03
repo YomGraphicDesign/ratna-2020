@@ -1,0 +1,20 @@
+uuid: 7f4edb16-260e-437b-8879-4e0f38cd98ce
+langcode: en
+status: false
+dependencies:
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: Ht6xtWTiebe_okEJXcfQSfaciNGpG_f_qGg1mZfJ-Wc
+id: ratna_bs5_page_title
+theme: ratna_bs5
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

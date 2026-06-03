@@ -1,0 +1,27 @@
+uuid: 22d96278-6379-4168-ac20-a5a8a4ac4436
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - ratna_bs5
+_core:
+  default_config_hash: j-CjU9yFlI6ywbIVb_CZRkpwrAG8MT4EE2fttEbJt9E
+id: ratna_bs5_main_menu
+theme: ratna_bs5
+region: primary_menu
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }
