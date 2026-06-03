@@ -1,0 +1,11 @@
+# ---------------------------------------------------------------------------
+# OVH : forcer HTTPS. Le SSL est terminé par le proxy OVH (PHP ne voit pas
+# HTTPS) → on teste X-Forwarded-Proto. Placé en tête (prepend scaffold) pour
+# s'exécuter avant la réécriture vers index.php.
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+

@@ -195,6 +195,7 @@
             },
             "file-mapping": {
                 "[web-root]/.htaccess": {
+                    "prepend": "assets/htaccess-prepend.txt",
                     "append": "assets/htaccess-append.txt"
                 }
             }
