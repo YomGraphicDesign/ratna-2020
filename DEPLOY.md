@@ -1,30 +1,34 @@
 # Déploiement — ratna-2020
 
-## Déploiement automatique (recommandé)
+## Déploiement automatique OVH sans SSH (recommandé)
 
 Chaque push sur la branche `master` déclenche automatiquement le déploiement via GitHub Actions.
 
+GitHub Actions installe les dépendances Composer avant le transfert. Le serveur OVH reçoit donc aussi les dossiers générés nécessaires au site :
+- `vendor/`
+- `htdocs/core/`
+- `htdocs/modules/contrib/`
+- `htdocs/themes/contrib/`
+- `htdocs/libraries/`
+
 **Prérequis (à faire une seule fois) :**
 
-**1. Récupérer la clé SSH privée locale :**
-```bash
-cat ~/.ssh/id_ed25519
-```
-Copier tout le contenu (de `-----BEGIN OPENSSH PRIVATE KEY-----` jusqu'à `-----END OPENSSH PRIVATE KEY-----`).
-
-**2. Ajouter les secrets dans GitHub :**
+**1. Ajouter les secrets FTP OVH dans GitHub :**
 
 Aller sur : https://github.com/YomGraphicDesign/ratna-2020/settings/secrets/actions
 
 | Name | Value |
 |------|-------|
-| `SSH_HOST` | adresse du serveur |
-| `SSH_USER` | identifiant SSH |
-| `SSH_PRIVATE_KEY` | contenu de `~/.ssh/id_ed25519` |
+| `OVH_FTP_SERVER` | serveur FTP/FTPS OVH |
+| `OVH_FTP_USERNAME` | identifiant FTP OVH |
+| `OVH_FTP_PASSWORD` | mot de passe FTP OVH |
+| `OVH_FTP_SERVER_DIR` | dossier distant du site, par exemple `/www/` |
+
+Le workflow applique aussi `chmod 755` avant l'envoi FTP.
 
 ---
 
-## Déploiement manuel
+## Déploiement manuel avec SSH
 
 ### 1. Pousser les modifications
 
