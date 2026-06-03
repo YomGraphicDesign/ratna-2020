@@ -850,7 +850,16 @@ a.use-ajax .ajax-progress {
     max-width: 960px !important;
   }
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #navbar-main,
+  .container,
+  .container-sm, .container-md, .container-lg, .container-xl, .container-xxl,
+  .dialog-off-canvas-main-canvas .container,
+  main.col {
+    max-width: 540px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
   #navbar-main,
   .container,
   .container-sm, .container-md, .container-lg, .container-xl, .container-xxl,
@@ -864,7 +873,13 @@ a.use-ajax .ajax-progress {
     margin-left: -5px;
   }
 }
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .view-taxonomy-term .view-header h2 {
+    top: -37px !important;
+    left: 124px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
   .view-taxonomy-term .view-header h2 {
     top: -38px !important;
     left: 150px !important;
@@ -874,5 +889,19 @@ a.use-ajax .ajax-progress {
   .responsive-menu-toggle,
   #toggle-icon {
     display: inline-block !important;
+  }
+}
+.responsive-menu-toggle-icon:before,
+.responsive-menu-toggle-icon:after,
+.responsive-menu-toggle-icon span.icon {
+  right: 0;
+  left: auto;
+}
+
+@media (max-width: 575.98px) {
+  .view .views-view-grid .row > [class*=col-] {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
   }
 }

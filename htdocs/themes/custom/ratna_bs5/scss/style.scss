@@ -885,7 +885,19 @@ a.use-ajax .ajax-progress { display: none !important; }
 }
 
 // Palier 576–991px : gabarit 720px
-@media (min-width: 576px) and (max-width: 991.98px) {
+// Palier sm (576–767) : gabarit 540
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #navbar-main,
+  .container,
+  .container-sm, .container-md, .container-lg, .container-xl, .container-xxl,
+  .dialog-off-canvas-main-canvas .container,
+  main.col {
+    max-width: 540px !important;
+  }
+}
+
+// Palier md (768–991) : gabarit 720
+@media (min-width: 768px) and (max-width: 991.98px) {
   #navbar-main,
   .container,
   .container-sm, .container-md, .container-lg, .container-xl, .container-xxl,
@@ -895,13 +907,21 @@ a.use-ajax .ajax-progress { display: none !important; }
   }
 }
 
-// Palier 576–991px : recalage du logo
+// Recalage du logo (576–991)
 @media (min-width: 576px) and (max-width: 991.98px) {
   #navbar-main .navbar-brand { margin-left: -5px; }
 }
 
-// Palier 576–991px : titre de catégorie galerie
-@media (min-width: 576px) and (max-width: 991.98px) {
+// Titre de catégorie — palier sm (576–767)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .view-taxonomy-term .view-header h2 {
+    top: -37px !important;
+    left: 124px !important;
+  }
+}
+
+// Titre de catégorie — palier md (768–991)
+@media (min-width: 768px) and (max-width: 991.98px) {
   .view-taxonomy-term .view-header h2 {
     top: -38px !important;
     left: 150px !important;
@@ -912,4 +932,21 @@ a.use-ajax .ajax-progress { display: none !important; }
 @media (max-width: 991.98px) {
   .responsive-menu-toggle,
   #toggle-icon { display: inline-block !important; }
+}
+
+// Barres de l'icône hamburger alignées à droite
+.responsive-menu-toggle-icon:before,
+.responsive-menu-toggle-icon:after,
+.responsive-menu-toggle-icon span.icon {
+  right: 0;
+  left: auto;
+}
+
+// Sous 576px (xs) : grille de vignettes en 2 colonnes
+@media (max-width: 575.98px) {
+  .view .views-view-grid .row > [class*="col-"] {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+  }
 }
