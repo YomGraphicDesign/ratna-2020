@@ -38,9 +38,16 @@ if [[ "$FIRST_RUN" == "--first-run" ]]; then
   chmod 755 htdocs/sites/default/files
 fi
 
-echo "==> [3/5] fix permissions on libraries"
-find htdocs/libraries -type d -exec chmod 755 {} \; 2>/dev/null || true
-find htdocs/libraries -type f -exec chmod 644 {} \; 2>/dev/null || true
+echo "==> [3/5] fix permissions"
+PERMISSION_ERRORS="$(mktemp)"
+find . -path './.git' -prune -o -exec chmod 755 {} + 2>"$PERMISSION_ERRORS"
+if [[ -s "$PERMISSION_ERRORS" ]]; then
+  echo "ERROR: some permissions could not be changed:"
+  cat "$PERMISSION_ERRORS"
+  rm -f "$PERMISSION_ERRORS"
+  exit 1
+fi
+rm -f "$PERMISSION_ERRORS"
 
 echo "==> [4/5] drush updb (apply pending DB updates)"
 vendor/bin/drush updb -y

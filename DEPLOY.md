@@ -45,9 +45,11 @@ cd ~/ratna-2020 && bash deploy.sh
 Le script fait automatiquement :
 - `git pull` — récupère les modifications
 - `composer install` — met à jour les dépendances
-- Correction des permissions `htdocs/libraries/`
+- Correction des permissions en `755` sur tous les fichiers et dossiers du projet
 - `drush updb` — applique les mises à jour BDD
 - `drush cr` — vide les caches
+
+Si un fichier ou dossier bloque la correction des permissions, le script affiche l'erreur et stoppe le déploiement.
 
 ---
 
