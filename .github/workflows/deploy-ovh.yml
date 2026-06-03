@@ -22,7 +22,7 @@ jobs:
           coverage: none
 
       - name: Install Composer dependencies
-        run: composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist
+        run: composer install --no-dev --optimize-autoloader --no-interaction --prefer-dist --no-scripts
 
       - name: Fix permissions
         run: find . -path './.git' -prune -o -exec chmod 755 {} +
@@ -48,6 +48,9 @@ jobs:
             **/archives/**
             **/archives.zip
             **/dom-snapshots/**
+            **/htdocs/sites/*/files/**
+            **/htdocs/sites/*/settings.php
+            **/htdocs/sites/*/settings.local.php
             **/old 2020/**
             **/tmp/**
             **/*.sql.gz
