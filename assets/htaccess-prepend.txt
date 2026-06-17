@@ -5,6 +5,18 @@
 # ---------------------------------------------------------------------------
 <IfModule mod_rewrite.c>
   RewriteEngine on
+
+  # === Blocage des scans de bots (WordPress / exploits) + injections SQL AVANT Drupal ===
+  # Renvoie 403 sans atteindre index.php → pas de pollution dblog/watchdog ni de charge base.
+  RewriteRule (?:^|/)wp-(?:login|admin|content|includes|json|signup|config|cron) - [F,L,NC]
+  RewriteRule (?:^|/)(?:xmlrpc\.php|wlwmanifest\.xml) - [F,L,NC]
+  RewriteRule (?:^|/)(?:phpinfo|phpunit|shell|cmd|eval|adminer|wso|alfa|radio)\.php - [F,L,NC]
+  RewriteRule (?:^|/)(?:\.aws|\.git/config|config\.json|credentials)$ - [F,L,NC]
+  RewriteCond %{QUERY_STRING} (CTXSYS|DRITHSX|UTL_INADDR|GET_HOST_ADDRESS|XMLTYPE|EXTRACTVALUE|UPDATEXML) [NC,OR]
+  RewriteCond %{QUERY_STRING} (UNION(\s|%20|\+)+SELECT|SLEEP%28|BENCHMARK%28|PG_SLEEP|WAITFOR(\s|%20)+DELAY|information_schema) [NC]
+  RewriteRule ^ - [F,L]
+
+  # Forcer HTTPS (SSL terminé par le proxy OVH → tester X-Forwarded-Proto)
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
